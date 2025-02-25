@@ -4,6 +4,31 @@
 
 ## Required Parts
 
+- Pi Tin Main PCB
+- Pi Tin Display Interconnect PCB
+- Raspberry Pi Zero 2 W
+- 2.8" ILI9341 TFT display with 50-pin FPC connector ([Adafruit 1774](https://www.adafruit.com/product/1774))
+- MicroSD card, 8GB or larger
+- Speaker ([CUI CMS-151125-076S-67](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-151125-076S-67/9561097))
+- Display cable ([GCT 10-08-A-0050-C-4-08-4-T](https://www.digikey.com/en/products/detail/gct/10-08-A-0050-C-4-08-4-T/22247571))
+- 3D printed front panel
+- Buttons (either 3D printed or DS Lite buttons)
+- 3D printed TPU button inserts/membranes (exact parts needed depend on buttons used)
+
+### For Altoids tin version
+
+- 1200mAH LiPo battery, 5.0x35x62mm ([Adafruit 258](https://www.adafruit.com/product/258))
+- 8x 4x2mm neodymium disc magnets
+- 3D printed rear housing
+- 3D printed tin lid insert
+- 4x 3D printed rear button
+
+### For 3D printed case version
+
+- 2000mAH LiPo battery, 8.0x38x60mm ([Adafruit 2011](https://www.adafruit.com/product/2011))
+- 3D printed case back
+- 3D printed display housing
+- 3D printed display bezel
 
 ## Required Tools and Materials
 
