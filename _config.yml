@@ -1,0 +1,23 @@
+remote_theme: jackw01/jackw01.github.io
+title: pi tin - the hackable, open source raspberry pi handheld retro gaming console
+description:
+github.is_project_page: false
+hide_first_h1: true
+plugins:
+  - jekyll-seo-tag
+nav_items:
+  - 1:
+    url: ./index
+    text: Readme
+  - 2:
+    url: ./hardware_build
+    text: Electronics Build Guide
+  - 3:
+    url: ./altoids_assembly
+    text: Final Assembly (Altoids Tin Version)
+  - 4:
+    url: ./3dp_assembly
+    text: Final Assembly (3D Printed Version)
+  - 5:
+    url: ./software_setup
+    text: Software Setup
