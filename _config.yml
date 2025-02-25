@@ -7,17 +7,17 @@ plugins:
   - jekyll-seo-tag
 nav_items:
   - 1:
-    url: ./index
+    url: index
     text: Readme
   - 2:
-    url: ./hardware_build
+    url: hardware_build
     text: Electronics Build Guide
   - 3:
-    url: ./altoids_assembly
+    url: altoids_assembly
     text: Final Assembly (Altoids Tin Version)
   - 4:
-    url: ./3dp_assembly
+    url: 3dp_assembly
     text: Final Assembly (3D Printed Version)
   - 5:
-    url: ./software_setup
+    url: software_setup
     text: Software Setup
