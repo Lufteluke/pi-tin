@@ -1,0 +1,11 @@
+[Unit]
+Description=Pi Tin Startup Service
+Before=gpionext.service
+
+[Service]
+User=root
+Type=simple
+ExecStart=/usr/bin/pi_tin_startup.sh
+
+[Install]
+WantedBy=multi-user.target

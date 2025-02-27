@@ -8,7 +8,7 @@ plugins:
 nav_items:
   - 1:
     url: index
-    text: Readme
+    text: Introduction
   - 2:
     url: hardware_build
     text: Electronics Build Guide

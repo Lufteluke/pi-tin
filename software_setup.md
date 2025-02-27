@@ -8,7 +8,7 @@ Download the latest RetroPie pre-made image for Raspberry Pi 2/3/Zero 2 W [here]
 
 After writing the SD card, eject and reinsert it to access the newly created boot partition. Create a file called `wpa_supplicant.conf` in the root directory of the boot partition with the contents below, replacing `SSID` and `PASSWORD` with your network name and password. If you are outside of the United States, change `country=US` to your country's [ISO two-letter country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 
-#### `wpa_supplicant.conf`
+`wpa_supplicant.conf`
 
 ```conf
 country=US
@@ -29,11 +29,20 @@ Create an empty file called `ssh` or `ssh.txt` in the boot partition to enable S
 
 Edit `cmdline.txt` in the boot partition and remove `console=serial0,115200`. This will disable the hardware serial console, which is necessary since one of the serial pins is used for a gamepad button.
 
-## 5. set up device tree overlays
+## 5. configure firmware options
 
 Edit `config.txt` in the boot partition and add the content below to the end of the file.
 
 ```txt
+# Enable GPIO power button functionality
+dtoverlay=gpio-shutdown,gpio_pin=7,active_low=0,gpio_pull=up
+dtoverlay=gpio-poweroff,gpiopin=3,active_low=1
+
+# Lower GPU memory allocation
+gpu_mem=128
+
+# Enable SPI with one chip select line (allow use of GPIO7)
+dtoverlay=spi0-1cs,no_miso
 ```
 
 ## 6. boot raspberry pi
@@ -41,6 +50,17 @@ Edit `config.txt` in the boot partition and add the content below to the end of 
 Insert the SD card and power up the Raspberry Pi. If the previous steps were done correctly, it should automatically connect to your WiFi network and you should be able to log in via SSH (`ssh pi@retropie.local`) using the default password `raspberry`.
 
 ## set up startup script
+
+```txt
+curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/shutdown_handler.py > /usr/bin/shutdown_handler.py
+curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.sh > /usr/bin/pi_tin_startup.sh
+curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.service > /etc/systemd/system/pi_tin_startup.service
+sudo chmod +x /usr/bin/shutdown_handler.py
+sudo chmod +x /usr/bin/pi_tin_startup.sh
+sudo systemctl daemon-reload
+sudo systemctl enable pi_tin_startup
+sudo systemctl start pi_tin_startup
+```
 
 ## set up display
 

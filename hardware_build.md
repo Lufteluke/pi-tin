@@ -2,47 +2,70 @@
 
 **Important: Read through the instructions thoroughly before building.**
 
-## Required Parts
+## required parts
 
 - Pi Tin Main PCB
 - Pi Tin Display Interconnect PCB
 - Raspberry Pi Zero 2 W
 - 2.8" ILI9341 TFT display with 50-pin FPC connector ([Adafruit 1774](https://www.adafruit.com/product/1774))
 - MicroSD card, 8GB or larger
-- Speaker ([CUI CMS-151125-076S-67](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-151125-076S-67/9561097))
-- Display cable ([GCT 10-08-A-0050-C-4-08-4-T](https://www.digikey.com/en/products/detail/gct/10-08-A-0050-C-4-08-4-T/22247571))
+- speaker ([CUI CMS-151125-076S-67](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-151125-076S-67/9561097))
+- display interconnect cable ([GCT 10-08-A-0050-C-4-08-4-T](https://www.digikey.com/en/products/detail/gct/10-08-A-0050-C-4-08-4-T/22247571))
 - 3D printed front panel
-- Buttons (either 3D printed or DS Lite buttons)
+- buttons (either 3D printed or DS Lite buttons)
 - 3D printed TPU button inserts/membranes (exact parts needed depend on buttons used)
 
-### For Altoids tin version
-
-- 1200mAH LiPo battery, 5.0x35x62mm ([Adafruit 258](https://www.adafruit.com/product/258))
-- 8x 4x2mm neodymium disc magnets
-- 3D printed rear housing
-- 3D printed tin lid insert
-- 4x 3D printed rear button
-
-### For 3D printed case version
+### for 3D printed case version
 
 - 2000mAH LiPo battery, 8.0x38x60mm ([Adafruit 2011](https://www.adafruit.com/product/2011))
 - 3D printed case back
 - 3D printed display housing
 - 3D printed display bezel
 
-## Required Tools and Materials
+### for Altoids tin version
 
-- Soldering iron with narrow conical or chisel tip
-- Solder (63% tin / 37% lead solder, 0.6mm or smaller diameter recommended)
-- Flux pen or paste flux (we recommend [Chip Quik NC191](https://www.digikey.com/en/products/detail/chip-quik-inc/NC191/11480391))
+- 1200mAH LiPo battery, 5.0x35x62mm ([Adafruit 258](https://www.adafruit.com/product/258))
+- Altoids Classic 1.76oz tin (other brands or sizes will not work)
+- 8x 4x2mm neodymium disc magnets
+- 3D printed rear housing
+- 3D printed display mount
+- 3D printed lid magnet holder
+- 4x 3D printed rear button
+- 3D printed drill guide
+
+## required tools and materials
+
+- soldering iron with narrow conical or chisel tip
+- solder (63% tin / 37% lead solder, 0.6mm or smaller diameter recommended)
+- flux pen or paste flux (we recommend [Chip Quik NC191](https://www.digikey.com/en/products/detail/chip-quik-inc/NC191/11480391))
 - 1.5mm hex screwdriver or allen key
 - Fine point tweezers
 
-### For Altoids tin version
+### for Altoids tin version
 
-- Drill with 1/8in (3mm) and 3/16in (5mm) drill bits
-- Needle files
-- Cyanoacrylate adhesive (super glue)
+- drill with 1/8in (3mm) and 3/16in (5mm) drill bits
+- needle files
+- small flush wire cutters
+- wood block that fits inside open Altoids tin, to support it during drilling
+- isopropyl alcohol, 91%
+- thin double-sided tape (such as 3M 468MP Adhesive Transfer Tape)
+- cyanoacrylate adhesive (super glue)
+
+## 3D printing instructions
+
+All parts except the button membranes should be printed in PETG or ABS with 0.2mm or 0.1mm layer height, using either a 0.4mm nozzle with 4 perimeters or 0.6mm nozzle with 3 perimeters. If using 3D printed buttons, they should be printed with 0.1mm layer height. The button membranes should be printed in 95A durometer TPU with 0.1mm layer height. If printing TPU is not possible, a rigid material can be used, but the buttons will be louder and clickier and the rounded nub on the D-pad membrane may have to be trimmed as it is designed to compress slightly when printed in TPU.
+
+All parts have a flat face and should be printed with this side facing down. All parts should be printable without supports on a well-tuned printer, but we recommend printing the case back and display bezel (3DP case version) or rear housing (Altoids tin version) with the "support on build plate only" option to achieve better quality counterbore holes.
+
+The photos below show all the parts required for each build option, assuming 3D printed buttons. If using DS Lite buttons, the TPU button membranes (black) will look different.
+
+### 3D printed parts for 3D printed case version
+
+![](images/3dp_case_parts.jpg)
+
+### 3D printed parts for Altoids tin version
+
+![](images/mint_tin_parts.jpg)
 
 ## 1. solder the Raspberry Pi to the main PCB
 
@@ -78,9 +101,29 @@ Use a multimeter to test for continuity between each test point and the correspo
 
 ![](images/testpoints.png)
 
-## 3. functional test
+If any pads do not show continuity with their test point, add more flux to the solder joint and melt the solder again, holding the soldering iron tip inside the Raspberry Pi plated hole for at least 10 seconds.
 
-## 4. front panel assembly
+## 3. display PCB assembly
+
+Before inserting the display FPC (flexible printed circuit) into the connector on the Display PCB, ensure that the black retention tab on the connector is in the open position (not pushed into the white connector housing). Insert the display FPC into the connector with the contacts facing up. It should not require any force to insert the FPC. If it does, the retention tab is likely not in the fully open position.
+
+![](images/display_conn_before.jpg)
+
+Carefully push in both sides of the retention tab at the same time until it is flush with the connector.
+
+![](images/display_conn_after.jpg)
+
+Lift up the black retention flap on the display interconnect cable connector. Insert the cable with the contacts facing down and flip down the retention flap. The cable should be held in securely.
+
+![](images/inter_conn_before.jpg)
+
+![](images/inter_conn_after.jpg)
+
+## 4. functional test (optional)
+
+If you want to verify the functionality of the Raspberry Pi and Pi Tin PCBs before final assembly, you can connect the display interconnect cable to the Main PCB and skip ahead to the [software setup guide](./software_setup) to install Retropie on the Raspberry Pi.
+
+## 5. front panel assembly
 
 Insert the buttons into the back of the front panel as shown. The A/B/X/Y buttons can only be inserted one way. The buttons should fit loosely; if using DS Lite A/B/X/Y buttons, the flanges of the buttons may need to be carefully trimmed with a craft knife or flush cutters.
 
@@ -98,3 +141,9 @@ If using 3D printed buttons, place the 3D printed TPU A/B/X/Y and D-pad membrane
 
 ![](images/front_panel_3dp_buttons.png)
 
+## next steps
+
+Continue to the final assembly guide for your build option.
+
+- [final assembly - 3D printed case version](./3dp_assembly)
+- [final assembly - Altoids tin version](./altoids_assembly)
