@@ -40,7 +40,7 @@ Attach the lid holder to the tin as shown using cyanoacrylate glue. The magnets 
 
 ## 4. display
 
-Use thin double-sided tape to attach the Display PCB to the rear of the display. The Display PCB should not overhang the edges of the display module.
+Use thin double-sided tape to attach the Display PCB to the rear of the display. The Display PCB is positioned correctly when the display FPC is in its natural resting position - the FPC should not be pulled taut or have excessive slack. The Display PCB should not overhang the edges of the display module and the display interconnect cable should be centered with the viewing area of the display.
 
 ![]()
 
@@ -50,11 +50,13 @@ Apply thin double-sided tape to the top of the Display PCB and the exposed corne
 
 ![](images/display_mount.png)
 
-Apply thin double-sided tape to the display mount. Attach it to the inside of the Altoids tin lid so that the display cable is horizontally centered within the tin. **Note: If installed correctly, the display module will appear off center. This is intentional and the viewing area of the display will be centered.**
+Apply thin double-sided tape to the display mount. Attach it to the inside of the Altoids tin lid so that the display cable is horizontally centered within the tin.
 
 ![]()
 
-![]()
+**Note: When installed correctly, the display module will appear off center. This is intentional and the viewing area of the display will be centered as shown below.**
+
+![](images/display_centering.png)
 
 ## 5. final assembly
 

@@ -1,0 +1,1 @@
+The Altoids tin build option is more difficult than the 3D printed case option and requires additional tools and experience using them. We strongly recommend the 3D printed case option as it is easier to build and has better ergonomics and a larger battery.
