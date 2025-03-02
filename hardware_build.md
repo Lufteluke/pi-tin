@@ -1,12 +1,12 @@
 # Hardware
 
-**Important: Read through the instructions thoroughly before building.**
+**Important: Read through all the instructions thoroughly before building. This includes the software setup guide and the final assembly instructions for your chosen build option.**
 
 ## required parts
 
+- Raspberry Pi Zero 2 W
 - Pi Tin Main PCB
 - Pi Tin Display Interconnect PCB
-- Raspberry Pi Zero 2 W
 - 2.8" ILI9341 TFT display with 50-pin FPC connector ([Adafruit 1774](https://www.adafruit.com/product/1774))
 - MicroSD card, 8GB or larger
 - speaker ([CUI CMS-151125-076S-67](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-151125-076S-67/9561097))
@@ -38,8 +38,9 @@
 - soldering iron with narrow conical or chisel tip
 - solder (63% tin / 37% lead solder, 0.6mm or smaller diameter recommended)
 - flux pen or paste flux (we recommend [Chip Quik NC191](https://www.digikey.com/en/products/detail/chip-quik-inc/NC191/11480391))
+- multimeter with continuity test setting
 - 1.5mm hex screwdriver or allen key
-- Fine point tweezers
+- fine point tweezers
 
 ### for Altoids tin version
 
@@ -56,6 +57,8 @@
 All parts except the button membranes should be printed in PETG or ABS with 0.2mm or 0.1mm layer height, using either a 0.4mm nozzle with 4 perimeters or 0.6mm nozzle with 3 perimeters. If using 3D printed buttons, they should be printed with 0.1mm layer height. The button membranes should be printed in 95A durometer TPU with 0.1mm layer height. If printing TPU is not possible, a rigid material can be used, but the buttons will be louder and clickier and the rounded nub on the D-pad membrane may have to be trimmed as it is designed to compress slightly when printed in TPU.
 
 All parts have a flat face and should be printed with this side facing down. All parts should be printable without supports on a well-tuned printer, but we recommend printing the case back and display bezel (3DP case version) or rear housing (Altoids tin version) with the "support on build plate only" option to achieve better quality counterbore holes.
+
+**Important: If using PETG, it is important to dry the filament before printing as these parts have somewhat tight tolerances and stringing or blobbing caused by wet filament can make them unusable.**
 
 The photos below show all the parts required for each build option, assuming 3D printed buttons. If using DS Lite buttons, the TPU button membranes (black) will look different.
 
@@ -83,6 +86,8 @@ Mate the Raspberry Pi to the Main PCB as shown, with the blank side of the facin
 
 Inspect the PCBs. If the Raspberry Pi is no longer aligned with the white outline on the main PCB or the two PCBs are not flush with each other where pin 2 is located, carefully reheat and reposition the solder joint. **Be very careful handling the PCBs until more than a few of the Raspberry Pi pins have been soldered as it is easy to accidentally rip the pads off the Main PCB.**
 
+**Important: The Raspberry Pi must be lined up exactly with the outline printed on the Main PCB. Otherwise, the PCB assembly may not fit into the 3D printed parts correctly later. It is very difficult to correct any misalignment after more than one Raspberry Pi pad has been soldered, so it is critical to ensure that the PCBs are aligned after soldering the first pad.**
+
 Once the first solder joint is complete, continue soldering the rest of the 40 through-hole pins on the Raspberry Pi to the Main PCB. We recommend soldering the opposite corner pad next while squeezing the PCBs together to account for any warping of the PCBs, then soldering the remaining pads working from the outside of the array inwards.
 
 For each pin:
@@ -94,6 +99,8 @@ For each pin:
 - Remove the soldering iron. If the solder does not form a smooth cup shape inside the hole, it is likely that it did not adhere to the pad on the Main PCB. Add some more flux and melt the solder again, holding the soldering iron in place for longer this time.
 
 ![soldering photo]()
+
+**Important: The surface of the solder joints must be flush with the Raspberry Pi PCB. Any solder blobs or spikes that protrude from the surface may cause damage to the battery. Using enough flux should prevent this from being an issue.**
 
 ## 2. test the solder joints
 
@@ -119,11 +126,7 @@ Lift up the black retention flap on the display interconnect cable connector. In
 
 ![](images/inter_conn_after.jpg)
 
-## 4. functional test (optional)
-
-If you want to verify the functionality of the Raspberry Pi and Pi Tin PCBs before final assembly, you can connect the display interconnect cable to the Main PCB and skip ahead to the [software setup guide](./software_setup) to install Retropie on the Raspberry Pi.
-
-## 5. front panel assembly
+## 4. front panel assembly
 
 Insert the buttons into the back of the front panel as shown. The A/B/X/Y buttons can only be inserted one way. The buttons should fit loosely; if using DS Lite A/B/X/Y buttons, the flanges of the buttons may need to be carefully trimmed with a craft knife or flush cutters.
 
@@ -141,9 +144,25 @@ If using 3D printed buttons, place the 3D printed TPU A/B/X/Y and D-pad membrane
 
 ![](images/front_panel_3dp_buttons.png)
 
-## next steps
+## 5. functional test
 
-Continue to the final assembly guide for your build option.
+We strongly recommend testing the functionality of the Raspberry Pi, Pi Tin PCBs, and display at this point. First, connect the display cable and battery to the Main PCB and ensure there is no SD card in the Raspberry Pi.
+
+![](images/test_connections.jpg)
+
+Connect the Main PCB to a power source using a USB-C cable. The green LED should illuminate to indicate that the battery is charging. If it does not, either there is something wrong with the USB-C cable or power source, or the PCB and/or battery is damaged. Disconnect the USB-C cable and the battery.
+
+*Note: The green LED indicates that the battery is charging. It turns off when the battery is fully charged. The orange LED indicates that the battery voltage is low. The Raspberry Pi will automatically shut down when the battery is critically low.*
+
+Reconnect the USB-C cable and press the power button. The display should turn on immediately and display a blank white screen. If it does not, the display is not receiving power. Double-check the display and cable connectors and all solder joints on the Raspberry Pi.
+
+![](images/power_button_cad.png)
+
+*Note: The power button cannot be used to shut down the Raspberry Pi until it is properly configured in software. If the Pi is powered on without the SD card installed or without the software configured, both the battery and USB-C cable will need to be disconnected to power it off.*
+
+Disconnect the USB-C cable to turn off power. Follow the [software setup guide](./software_setup) to install RetroPie on the Raspberry Pi and verify functionality.
+
+Once you have installed RetroPie and verified that the hardware is working, continue to the final assembly guide for your build option.
 
 - [final assembly - 3D printed case version](./3dp_assembly)
 - [final assembly - Altoids tin version](./altoids_assembly)

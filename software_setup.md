@@ -1,12 +1,14 @@
 # Software Setup
 
-## 1. install RetroPie
+For convenience, we provide a SD card image based on [RetroPie 4.8](https://retropie.org.uk/download/) with all required software installed and configured. Full instructions for installing the required software on top of a clean install of RetroPie are [here](./full_software_setup).
 
-Download the latest RetroPie pre-made image for Raspberry Pi 2/3/Zero 2 W [here](https://retropie.org.uk/download/). Extract the image from the .gz file and write it to a 8GB or larger MicroSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/), [Etcher](https://etcher.balena.io/), or [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/).
+## 1. install the prebuilt image
 
-## 2. set up wifi and ssh for headless operation
+Download the Pi Tin prebuilt image [here](onedrive). Write the image to a 8GB or larger MicroSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/), [Etcher](https://etcher.balena.io/), or [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/).
 
-After writing the SD card, eject and reinsert it to access the newly created boot partition. Create a file called `wpa_supplicant.conf` in the root directory of the boot partition with the contents below, replacing `SSID` and `PASSWORD` with your network name and password. If you are outside of the United States, change `country=US` to your country's [ISO two-letter country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
+## 2. set up wifi
+
+After writing the SD card, eject and reinsert it to access the newly created boot partition. Create a file called `wpa_supplicant.conf` in the root directory of the boot partition with the contents below, replacing `SSID` and `PASSWORD` with your network name and password. You can add multiple networks by copying the `network={}` block. If you are outside of the United States, change `country=US` to your country's [ISO two-letter country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 
 `wpa_supplicant.conf`
 
@@ -23,89 +25,22 @@ network={
 # RETROPIE CONFIG END
 ```
 
-Create an empty file called `ssh` or `ssh.txt` in the boot partition to enable SSH.
+## 3. boot Raspberry Pi and verify functionality
 
-## 4. disable serial console
+With the display connected, insert the SD card, connect the USB-C cable, and press the power button to power up the Raspberry Pi. If the hardware build and software installation were done correctly, the display should show a blank white screen at power on, then within 30 seconds display the RetroPie splash screen and the EmulationStation launcher. Press and release the power button again and the Raspberry Pi should safely shut down and the display should turn off completely. If the Raspberry Pi does not shut down, it is likely because one or more of the pins is not soldered properly.
 
-Edit `cmdline.txt` in the boot partition and remove `console=serial0,115200`. This will disable the hardware serial console, which is necessary since one of the serial pins is used for a gamepad button.
+## 4. connect via SSH and change password
 
-## 5. configure firmware options
+The Raspberry Pi should automatically connect to your WiFi network within a minute after booting up and you should be able to log in via SSH using the default password `raspberry` (use `ssh pi@retropie.local` in the command line on any computer running Windows 10 or 11, Mac OS, or Linux).
 
-Edit `config.txt` in the boot partition and add the content below to the end of the file.
+We strongly recommend changing the user password since SSH and SMB are enabled. This can be done by running the `passwd` command on the Raspberry Pi via SSH.
 
-```txt
-# Enable GPIO power button functionality
-dtoverlay=gpio-shutdown,gpio_pin=7,active_low=0,gpio_pull=up
-dtoverlay=gpio-poweroff,gpiopin=3,active_low=1
+You can also test audio at this point by running `speaker-test -c2` on the Raspberry Pi. You should hear white noise from the speaker.
 
-# Lower GPU memory allocation
-gpu_mem=128
+## 5. using RetroPie
 
-# Enable SPI with one chip select line (allow use of GPIO7)
-dtoverlay=spi0-1cs,no_miso
-```
+Follow the [RetroPie Getting Started guide](https://retropie.org.uk/docs/Controller-Configuration/) to configure and test the gamepad buttons and load ROMs.
 
-## 6. boot raspberry pi
+*Note: Pi Tin has a dedicated hotkey for RetroPie which is located directly above the power button. This button is configurable during the controller setup process.*
 
-Insert the SD card and power up the Raspberry Pi. If the previous steps were done correctly, it should automatically connect to your WiFi network and you should be able to log in via SSH (`ssh pi@retropie.local`) using the default password `raspberry`.
-
-## set up startup script
-
-```txt
-curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/shutdown_handler.py > /usr/bin/shutdown_handler.py
-curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.sh > /usr/bin/pi_tin_startup.sh
-curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.service > /etc/systemd/system/pi_tin_startup.service
-sudo chmod +x /usr/bin/shutdown_handler.py
-sudo chmod +x /usr/bin/pi_tin_startup.sh
-sudo systemctl daemon-reload
-sudo systemctl enable pi_tin_startup
-sudo systemctl start pi_tin_startup
-```
-
-## set up display
-
-Use Adafruit's setup script to install and configure fbcp for the ILI9341 2.8" TFT display. Select the PiGRRL 2 option.
-
-```txt
-cd ~
-curl https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/pitft-fbcp.sh > pitft-fbcp.sh
-sudo bash pitft-fbcp.sh
-```
-
-## set up audio
-
-Use Adafruit's setup script to MAX98357 I2S DAC. **Do not** enable the option to activate /dev/zero playback in the background.
-
-```txt
-cd ~
-pip3 install adafruit-python-shell
-curl https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/main/i2samp.py > i2samp.py
-sudo -E env PATH=$PATH python3 i2samp.py
-```
-
-After rebooting, run `speaker-test -c2`. You should hear white noise from the speaker.
-
-## set up gamepad driver
-
-// copy gpionext config
-
-
-
-```txt
-cd ~
-git clone https://github.com/jackw01/GPIOnext.git
-bash GPIOnext/install.sh
-```
-
-## set up gamepad in RetroPie
-
-## update RetroPie
-
-https://retropie.org.uk/docs/Updating-RetroPie/#:~:text=The%20conventional%20way%20to%20update,%2DSetup%2Fretropie_setup.sh%20.
-
-## change RetroPie theme
-
-
-### sources
-- [Running OpenGL-based Games & Emulators on Adafruit PiTFT Displays](https://learn.adafruit.com/running-opengl-based-games-and-emulators-on-adafruit-pitft-displays/)
-- [Adafruit MAX98357 I2S Class-D Mono Amp](https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/overview)
+![](images/gamepad_layout.png)

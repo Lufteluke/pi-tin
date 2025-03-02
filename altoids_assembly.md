@@ -14,7 +14,7 @@ Place the Main PCB onto the assembled front panel and connect the battery, leavi
 
 Insert the four rear buttons into the rear housing, then pick up the front panel and Main PCB together and mate them with the rear housing. The components should fit together without any force and the battery wires should not be pinched between the rear housing and PCB. Insert six M2x8mm socket head cap screws into the counterbore holes on the rear housing and tighten them in a star pattern. Do not overtighten the screws - stop tightening as soon as no gap is visible between the 3D printed parts and the PCB. Some downward pressure is required when tightening the screws for the first time since they are threading directly into plastic.
 
-![](images/mint_tin_assembly.jpg)
+![](images/mint_tin_asm.jpg)
 
 ## 2. prepare the Altoids tin
 
@@ -60,8 +60,8 @@ Apply thin double-sided tape to the display mount. Attach it to the inside of th
 
 ## 5. final assembly
 
-Connect the display cable to the Main PCB following the same steps used to connect it to the Display PCB. Insert the Main PCB package into the Altoids tin. It is easiest to insert the bottom edge (Raspberry Pi side) first at an angle and then tilt the assembly into place. Check that the rear buttons and USB port line up and that the Main PCB package is sitting flush with the base of the tin. Check that the tin is still able to close, making sure that the display cable folds into the space between the front panel and the display instead of being pushed into the recess around the connector.
+Connect the display cable to the Main PCB following the same steps used to connect it to the Display PCB. Insert the Main PCB package into the Altoids tin. It is easiest to insert the bottom edge (Raspberry Pi side) first at an angle and then tilt the assembly into place. Check that the rear buttons and USB port line up and that the Main PCB package is sitting flush with the base of the tin. Check that the tin is still able to close, making sure that the display cable folds into the space between the front panel and the display instead of being pinched between the display and the tin.
 
 ![]()
 
-If everything appears to work mechanically, head over to the [software setup guide](./software_setup) to install Retropie on the Raspberry Pi.
+If everything appears to work mechanically, head over to the [software setup guide](./software_setup) to install RetroPie on the Raspberry Pi.
