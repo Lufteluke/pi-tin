@@ -32,6 +32,8 @@ Check that the buttons on the front panel are not sticking. If they are, it is l
 
 Fold the display FPC over the back of the display and place the display assembly into the display bezel, oriented so that the display cable connector is aligned with the tab on the bezel. Connect the display cable to the Display PCB.
 
+*Note: Remove the protective film from the display before inserting it into the bezel.*
+
 ![](images/display_bezel.jpg)
 
 Place the display housing over the display bezel so that the display cable is aligned with the cutout in the housing. Flip the assembly over and insert the four M2x4 socket head cap screws into the display bezel. Tighten the screws in a star pattern.
@@ -40,10 +42,8 @@ Place the display housing over the display bezel so that the display cable is al
 
 ## 4. final assembly
 
-Line up the display housing with the mounting points on the lower case. Insert and tighten the two M2x20 socket head cap screws.
+Line up the display housing with the mounting points on the lower case, folding the display cable forward as shown. Insert and tighten the two M2x20 socket head cap screws that hold the display hinge together.
 
 ![](images/display_housing_screws.jpg)
 
 ![](images/3dp_case_finished.jpg)
-
-Finished?

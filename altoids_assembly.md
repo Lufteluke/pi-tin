@@ -12,7 +12,7 @@ Place the Main PCB onto the assembled front panel and connect the battery, leavi
 
 ![](images/mint_tin_battery.jpg)
 
-Insert the four rear buttons into the rear housing, then pick up the front panel and Main PCB together and mate them with the rear housing. The components should fit together without any force and the battery wires should not be pinched between the rear housing and PCB. Insert six M2x8mm socket head cap screws into the counterbore holes on the rear housing and tighten them in a star pattern. Do not overtighten the screws - stop tightening as soon as no gap is visible between the 3D printed parts and the PCB. Some downward pressure is required when tightening the screws for the first time since they are threading directly into plastic.
+Insert the four rear buttons into the rear housing, then pick up the front panel and Main PCB together and mate them with the rear housing. The components should fit together closely without applying any force and the battery wires must not be pinched between the rear housing and PCB. Insert six M2x8mm socket head cap screws into the counterbore holes on the rear housing and tighten them in a star pattern. Do not overtighten the screws - stop tightening as soon as no gap is visible between the 3D printed parts and the PCB. Some downward pressure is required when tightening the screws for the first time since they are threading directly into plastic.
 
 Use a small piece of thin double-sided tape to secure the battery in place if desired.
 
@@ -26,7 +26,7 @@ Align the drill guide with the tin as shown and use it to mark locations for dri
 
 ![](images/drill_guide.png)
 
-Drill all holes with a 1/8in (3mm) drill bit. Drill out the four rear button holes to 3/16in (5mm), using a sacrificial piece of wood on the other side of the tin to keep the metal from tearing. Use flush wire cutters to cut out the remaining tab of metal between the holes forming the USB port cutout. Using needle files, file the USB port cutout to its final shape and debur the edges of the other holes.
+Drill all holes with a 1/16in (1.5mm) drill bit. Drill out the four rear button holes to 3/16in (5mm), gradually increasing drill bit sizes and using a sacrificial piece of wood on the other side of the tin to keep the metal from tearing. Drill out the two holes forming the USB port cutout to 1/8in (3mm). Use flush wire cutters to cut out the remaining tab of metal between the holes. Using needle files or a rotary tool, file the USB port cutout to its final shape and debur the edges of the other holes.
 
 ![](images/tin_holes.png)
 
@@ -73,5 +73,3 @@ Apply thin double-sided tape to the display mount. Attach it to the inside of th
 Connect the display cable to the Main PCB following the same steps used to connect it to the Display PCB. Insert the Main PCB assembly into the Altoids tin. It is easiest to insert the bottom edge (Raspberry Pi side) first at an angle and then tilt the assembly into place. Check that the rear buttons and USB port line up with the cutouts and that the Main PCB assembly is sitting flush with the base of the tin. Check that the tin is still able to close, making sure that the display cable folds into the space between the front panel and the display instead of being pinched between the display and the tin.
 
 ![](images/mint_tin_finished.jpg)
-
-If everything appears to work mechanically, head over to the [software setup guide](./software_setup) to install RetroPie on the Raspberry Pi.

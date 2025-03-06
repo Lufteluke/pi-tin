@@ -44,8 +44,8 @@
 
 ### for Altoids tin version
 
-- drill with 1/8in (3mm) and 3/16in (5mm) drill bits
-- needle files
+- drill with 1/16in (1.5mm), 1/8in (3mm), and 3/16in (5mm) drill bits
+- needle files, or Dremel with small diamond or aluminum oxide burr bits
 - small flush wire cutters
 - wood block that fits inside open Altoids tin, to support it during drilling
 - isopropyl alcohol, 91%
@@ -81,6 +81,8 @@ Before starting, apply a thin layer of flux to the array of 40 square pads on th
 ![](images/pcb_bare.png)
 
 Mate the Raspberry Pi to the Main PCB as shown, with the blank side of the facing upwards. Pinch the boards together tightly, keeping the Raspberry Pi aligned with the outline on the Main PCB. Insert the soldering iron tip into the Raspberry Pi pin 2 pad (circled) and hold it there until the solder applied to the Main PCB melts and flows into the plated hole.
+
+*Note: it may be helpful to use small clamps or tape to hold the PCBs together.*
 
 ![](images/pcb_with_pi.png)
 

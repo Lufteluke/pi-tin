@@ -16,11 +16,17 @@ Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D pri
 
 ![](images/display_pcb.jpg)
 
+*Note: Rev. 1 PCBs shown, Rev. 2 PCBs have minor differences.*
+
 ## build options
 
 Pi Tin can either be built with a 3D printed clamshell case or built to fit inside an Altoids tin.
 
-![](images/build_options.jpg)
+![](images/size_comparison.jpg)
+
+![](images/3dp_case_rear.jpg)
+
+![](images/altoids_rear.jpg)
 
 The Altoids tin build option is more difficult than the 3D printed case option; it requires additional tools and experience using them. We strongly recommend the 3D printed case option as it is easier to build and has better ergonomics and a 66% larger battery.
 

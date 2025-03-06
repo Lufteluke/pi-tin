@@ -43,6 +43,9 @@ dtoverlay=gpio-poweroff,gpiopin=3,active_low=1
 # Lower GPU memory allocation
 gpu_mem=128
 
+# Disable UART
+enable_uart=0
+
 # Enable SPI with one chip select line (allow use of GPIO7)
 dtoverlay=spi0-1cs,no_miso
 ```
@@ -53,7 +56,7 @@ Insert the SD card and power up the Raspberry Pi. If the previous steps were don
 
 We strongly recommend changing the user password since SSH and SMB are enabled. This can be done by running the `passwd` command on the Raspberry Pi.
 
-## 6. set up startup script
+## 6. configure startup behavior
 
 Run the following commands to download the startup script and shutdown button handler and configure them to run at boot, before the GPIOnext service starts.
 
@@ -68,13 +71,18 @@ sudo systemctl enable pi_tin_startup
 sudo systemctl start pi_tin_startup
 ```
 
+Run the following command to disable waiting for a network connection at boot.
+```
+sudo raspi-config nonint do_boot_wait 1
+```
+
 ## 7. set up display
 
-Use Adafruit's setup script to install and configure fbcp for the ILI9341 2.8" TFT display. Select the PiGRRL 2 option.
+Use Adafruit's setup script to install and configure fbcp for the ILI9341 2.8" TFT display. Select the `Cupcade (horizontal screen)`option.
 
 ```txt
 cd ~
-curl https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/pitft-fbcp.sh > pitft-fbcp.sh
+curl -O https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/pitft-fbcp.sh
 sudo bash pitft-fbcp.sh
 ```
 
@@ -85,9 +93,11 @@ Use Adafruit's setup script to MAX98357 I2S DAC. **Do not** enable the option to
 ```txt
 cd ~
 pip3 install adafruit-python-shell
-curl https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/main/i2samp.py > i2samp.py
+curl -O https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/main/i2samp.py
 sudo -E env PATH=$PATH python3 i2samp.py
 ```
+
+Edit `/boot/config.txt` to change the line `dtoverlay=max98357a` to `dtoverlay=max98357a,no-sdmode=on`.
 
 After rebooting, run `speaker-test -c2`. You should hear white noise from the speaker.
 
@@ -105,6 +115,13 @@ bash GPIOnext/install.sh
 
 a
 
+Edit `/opt/retropie/configs/all/retroarch/autoconfig/GPIOnext Joypad 1.cfg` and add these lines at the end to enable volume control using the hotkey.
+
+```txt
+input_volume_up_axis = "-1"
+input_volume_down_axis = "+1"
+```
+
 ## 11. update RetroPie
 
 https://retropie.org.uk/docs/Updating-RetroPie/#:~:text=The%20conventional%20way%20to%20update,%2DSetup%2Fretropie_setup.sh%20.
@@ -112,6 +129,28 @@ https://retropie.org.uk/docs/Updating-RetroPie/#:~:text=The%20conventional%20way
 ## 12. change RetroPie theme
 
 a
+
+## 13. configure RetroArch
+
+For more seamless operation, we recommend configuring RetroArch to automatically save the game state when exiting and load the saved state when starting. This setting can be changed later for individual ROMs. To do this, edit `/opt/retropie/configs/all/retroarch.cfg` and change the lines
+
+```txt
+savestate_auto_load = "false"
+savestate_auto_save = "false"
+```
+
+to
+
+```txt
+savestate_auto_load = "true"
+savestate_auto_save = "true"
+```
+
+When combined with the Pi Tin shutdown handler script, this change will allow the state to be automatically saved before the system shuts down.
+
+## additional notes
+
+Do not install `pulseaudio`. In testing we found that it interacts poorly with the MAX98357 I2S DAC+amp and causes it to draw so much current that it triggers the battery protection circuit.
 
 ## sources
 
