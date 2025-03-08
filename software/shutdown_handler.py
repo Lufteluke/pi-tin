@@ -12,7 +12,7 @@ GPIO.setup(pin_button, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 def main():
     while (True):
         if GPIO.input(pin_button):
-            time.sleep(0.3)
+            time.sleep(0.5)
             if GPIO.input(pin_button):
                 # stop retroarch first to allow it to save state
                 os.system("killall -s SIGTERM retroarch")

@@ -156,9 +156,9 @@ Connect the Main PCB to a power source using a USB-C cable. The green LED should
 
 *Note: The green LED indicates that the battery is charging. It turns off when the battery is fully charged. The orange LED indicates that the battery voltage is low. The Raspberry Pi will automatically shut down when the battery is critically low.*
 
-Reconnect the USB-C cable and press the power button. The display should turn on immediately and display a blank white screen. If it does not, the display is not receiving power. Double-check the display and cable connectors and all solder joints on the Raspberry Pi.
+Reconnect the USB-C cable and press the power button (the bottom-rightmost button). The display should turn on immediately and display a blank white screen. If it does not, the display is not receiving power. Double-check the display and cable connectors and all solder joints on the Raspberry Pi.
 
-![](images/power_button_cad.png)
+![](images/hotkeys.png)
 
 *Note: The power button cannot be used to shut down the Raspberry Pi until it is properly configured in software. If the Pi is powered on without the SD card installed or without the software configured, both the battery and USB-C cable will need to be disconnected to power it off.*
 

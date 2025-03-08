@@ -41,6 +41,6 @@ You can also test audio at this point by running `speaker-test -c2` on the Raspb
 
 Follow the [RetroPie Getting Started guide](https://retropie.org.uk/docs/Controller-Configuration/) to configure and test the gamepad buttons and load ROMs.
 
-*Note: Pi Tin has a dedicated hotkey for RetroPie which is located directly above the power button. This button is configurable during the controller setup process.*
+*Note: Pi Tin has a dedicated hotkey for RetroPie which is located directly above the power button. This button is configurable during the controller setup process. The special functions shown below can be used by pressing the buttons while holding down the hotkey. These functions can be [reconfigured in RetroArch](https://retropie.org.uk/docs/RetroArch-Configuration/#hotkeys).*
 
-![](images/gamepad_layout.png)
+![](images/hotkeys.png)

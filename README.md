@@ -1,12 +1,12 @@
-# Pi Tin - the open source raspberry pi handheld retro gaming console
+# Pi Tin - the open source Raspberry Pi handheld retro gaming console
 
 ![](images/main.jpg)
 
-Pi Tin is an open source retro gaming device designed around the Raspberry Pi Zero 2 W and a 2.8" 320x240 TFT display, the largest size that will fit into an Altoids tin. The Pi Zero 2 W is capable of emulating most SNES, GBA, PS1, Genesis/Megadrive, and even some N64 games.
+Pi Tin is an open source retro gaming device designed around the Raspberry Pi Zero 2 W and a 2.8" 320x240 TFT display, the largest readily available size that will fit into an Altoids tin. The Pi Zero 2 W is capable of emulating most SNES, GBA, PS1, Genesis/Megadrive, and even some N64 games.
 
 Pi Tin's gamepad uses the exact same Alps tactile switches and elastomer membrane design used in the Gameboy Advance SP, DSi, and other handheld game consoles to achieve superior button feel over designs using conductive rubber buttons or bare tactile switches.
 
-Pi Tin features a soft power button to turn on or safely shut down the system with a single press, and is designed to be safe to use while charging and compatible with all USB-C cables and chargers.
+Pi Tin features a soft power button to turn on or safely shut down the system with a single press, and is designed to be safe to use while charging and compatible with all USB-C cables and chargers. The battery lasts for up to x hours of gaming <small>(tested with GBA emulator and 3D printed case option)</small>.
 
 Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D printed parts, and a few other components which are readily available from distributors. The PCBs can be manufactured by low-cost manufacturers like JLCPCB, but are very difficult to assemble by hand. We are working on making assembled PCBs and full kits available to purchase.
 
@@ -14,7 +14,11 @@ Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D pri
 
 ![](images/main_pcb_2.jpg)
 
+[Schematic as PDF]()
+
 ![](images/display_pcb.jpg)
+
+[Schematic as PDF]()
 
 *Note: Rev. 1 PCBs shown, Rev. 2 PCBs have minor differences.*
 
