@@ -4,9 +4,7 @@
 
 Pi Tin is an open source retro gaming device designed around the Raspberry Pi Zero 2 W and a 2.8" 320x240 TFT display, the largest readily available size that will fit into an Altoids tin. The Pi Zero 2 W is capable of emulating most SNES, GBA, PS1, Genesis/Megadrive, and even some N64 games.
 
-Pi Tin's gamepad uses the exact same Alps tactile switches and elastomer membrane design used in the Gameboy Advance SP, DSi, and other handheld game consoles to achieve superior button feel over designs using conductive rubber buttons or bare tactile switches.
-
-Pi Tin features a soft power button to turn on or safely shut down the system with a single press, and is designed to be safe to use while charging and compatible with all USB-C cables and chargers. The battery lasts for up to x hours of gaming <small>(tested with GBA emulator and 3D printed case option)</small>.
+Pi Tin's gamepad uses the exact same Alps tactile switches and elastomer membrane design used in the Gameboy Advance SP, DSi, and other handheld game consoles to achieve superior button feel over designs using conductive rubber buttons or bare tactile switches. It features a soft power button to turn on or safely shut down the system with a single press, and is designed to be safe to use while charging and compatible with all USB-C cables and chargers. The battery lasts for up to 5 hours of gaming <small>(tested with GBA emulator on 3D printed case option - 2000mAh battery)</small>.
 
 Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D printed parts, and a few other components which are readily available from distributors. The PCBs can be manufactured by low-cost manufacturers like JLCPCB, but are very difficult to assemble by hand. We are working on making assembled PCBs and full kits available to purchase.
 
@@ -14,11 +12,11 @@ Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D pri
 
 ![](images/main_pcb_2.jpg)
 
-[Schematic as PDF]()
+[Schematic as PDF (Rev. 2)](pcb/main_pcb_r2/pi_tin_main_pcb_r2.pdf)
 
 ![](images/display_pcb.jpg)
 
-[Schematic as PDF]()
+[Schematic as PDF (Rev. 2)](pcb/display_pcb_r2/pi_tin_display_pcb_r2.pdf)
 
 *Note: Rev. 1 PCBs shown, Rev. 2 PCBs have minor differences.*
 
@@ -32,7 +30,7 @@ Pi Tin can either be built with a 3D printed clamshell case or built to fit insi
 
 ![](images/altoids_rear.jpg)
 
-The Altoids tin build option is more difficult than the 3D printed case option; it requires additional tools and experience using them. We strongly recommend the 3D printed case option as it is easier to build and has better ergonomics and a 66% larger battery.
+The Altoids tin build option is more difficult than the 3D printed case option; it requires additional tools and experience using them. It has poor ergonomics due to the constraints of building inside an Altoids tin and the battery capacity is 40% lower than the 3D printed case version. We **strongly** recommend the 3D printed case option for these reasons.
 
 **Important: Read through all the instructions thoroughly before building. This is an intermediate level project and we don't recommend attempting it without prior electronics kit building experience.**
 

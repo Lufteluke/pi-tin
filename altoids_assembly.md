@@ -12,7 +12,9 @@ Place the Main PCB onto the assembled front panel and connect the battery, leavi
 
 ![](images/mint_tin_battery.jpg)
 
-Insert the four rear buttons into the rear housing, then pick up the front panel and Main PCB together and mate them with the rear housing. The components should fit together closely without applying any force and the battery wires must not be pinched between the rear housing and PCB. Insert six M2x8mm socket head cap screws into the counterbore holes on the rear housing and tighten them in a star pattern. Do not overtighten the screws - stop tightening as soon as no gap is visible between the 3D printed parts and the PCB. Some downward pressure is required when tightening the screws for the first time since they are threading directly into plastic.
+Insert the four rear buttons into the rear housing, then pick up the front panel and Main PCB together and mate them with the rear housing. The components should fit together closely without applying any force and the battery wires must not be pinched between the rear housing and PCB. Insert six M2x8mm socket head cap screws into the counterbore holes on the rear housing and tighten them in a star pattern. Do not overtighten the screws - stop tightening as soon as no gap is visible between the 3D printed parts and the PCB.
+
+*Note: Some downward pressure is required when tightening the screws for the first time since they are threading directly into plastic.*
 
 Use a small piece of thin double-sided tape to secure the battery in place if desired.
 
@@ -46,11 +48,13 @@ Attach the lid holder to the tin as shown using cyanoacrylate glue. The magnets 
 
 ## 4. display
 
-Use thin double-sided tape to attach the Display PCB to the rear of the display in its natural resting position, as shown below. The Display PCB should not overhang the edges of the display module and the display interconnect cable should be centered with the viewing area of the display.
+Use thin double-sided tape to attach the Display PCB to the rear of the display in its natural resting position, as shown below. The Display PCB should not overhang the edges of the display module and the display interconnect cable should be roughly centered with the viewing area of the display.
+
+*Note: Rev. 1 Display PCB shown, Rev. 2 will differ slightly.*
 
 ![](images/display_tape_1.jpg)
 
-Apply thin double-sided tape to the top of the Display PCB and the exposed corners of the rear of the display module. Attach the display mount as shown, ensuring that the entire LCD module is inside of the rectangle defined by the two flanges on either side of the display mount. Any vertical misalignment may result in the LCD getting damaged when the tin is closed.
+Apply thin double-sided tape to the top of the Display PCB and the exposed corners of the rear of the display module. Attach the display mount as shown, ensuring that the LCD module is aligned with the two flanges on either side of the display mount. Any vertical misalignment may result in the LCD getting damaged when the tin is closed.
 
 ![](images/display_tape_2.jpg)
 

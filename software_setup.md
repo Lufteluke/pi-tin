@@ -1,6 +1,6 @@
 # Software Setup
 
-For convenience, we provide a SD card image based on [RetroPie 4.8](https://retropie.org.uk/download/) with all required software installed and configured. Full instructions for installing the required software on top of a clean install of RetroPie are [here](./full_software_setup).
+For convenience, we provide a SD card image based on [RetroPie 4.8](https://retropie.org.uk/download/) with all required software installed and configured. This guide assumes you are using the prebuilt image. If not, full instructions for installing the required software on top of a clean install of RetroPie are [here](./full_software_setup).
 
 ## 1. install the prebuilt image
 
@@ -8,7 +8,11 @@ Download the Pi Tin prebuilt image [here](onedrive). Write the image to a 8GB or
 
 ## 2. set up wifi
 
-After writing the SD card, eject and reinsert it to access the newly created boot partition. Create a file called `wpa_supplicant.conf` in the root directory of the boot partition with the contents below, replacing `SSID` and `PASSWORD` with your network name and password. You can add multiple networks by copying the `network={}` block. If you are outside of the United States, change `country=US` to your country's [ISO two-letter country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
+After writing the SD card, eject and reinsert it to access the newly created boot partition.
+
+*Note: If using Windows, ignore any popups asking to "scan and fix" or format the SD card.*
+
+Create a file called `wpa_supplicant.conf` in the root directory of the boot partition with the contents below, replacing `SSID` and `PASSWORD` with your network name and password. You can add multiple networks by copying the `network={}` block. If you are outside of the United States, change `country=US` to your country's [ISO two-letter country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 
 `wpa_supplicant.conf`
 
@@ -27,7 +31,7 @@ network={
 
 ## 3. boot Raspberry Pi and verify functionality
 
-With the display connected, insert the SD card, connect the USB-C cable, and press the power button to power up the Raspberry Pi. If the hardware build and software installation were done correctly, the display should show a blank white screen at power on, then within 30 seconds display the RetroPie splash screen and the EmulationStation launcher. Press and release the power button again and the Raspberry Pi should safely shut down and the display should turn off completely. If the Raspberry Pi does not shut down, it is likely because one or more of the pins is not soldered properly.
+With the display connected, insert the SD card, connect the USB-C cable, and press the power button to power up the Raspberry Pi. If the hardware build and software installation were done correctly, the display should show a blank white screen at power on, then within 30 seconds display the RetroPie splash screen and the EmulationStation launcher. Press and release the power button again and the Raspberry Pi should safely shut down and the display should turn off completely. If the Raspberry Pi does not shut down, it is likely because one or more of the pads is not soldered properly.
 
 ## 4. connect via SSH and change password
 
@@ -41,6 +45,13 @@ You can also test audio at this point by running `speaker-test -c2` on the Raspb
 
 Follow the [RetroPie Getting Started guide](https://retropie.org.uk/docs/Controller-Configuration/) to configure and test the gamepad buttons and load ROMs.
 
-*Note: Pi Tin has a dedicated hotkey for RetroPie which is located directly above the power button. This button is configurable during the controller setup process. The special functions shown below can be used by pressing the buttons while holding down the hotkey. These functions can be [reconfigured in RetroArch](https://retropie.org.uk/docs/RetroArch-Configuration/#hotkeys).*
+Pi Tin has a dedicated hotkey for RetroPie which is located directly above the power button. This button is configurable during the controller setup process. The special functions shown below can be used by pressing the buttons while holding down the hotkey.
 
 ![](images/hotkeys.png)
+
+The volume control hotkeys must be set up after configuring the controller by manually editing the  configuration file. Log in via SSH and run `sudo nano /opt/retropie/configs/all/retroarch/autoconfig/GPIOnext Joypad 1.cfg`. Add these lines at the end to enable volume control using the hotkey and press `Ctrl+X`, then `Y`, then `Enter` to save.
+
+```txt
+input_volume_up_axis = "-1"
+input_volume_down_axis = "+1"
+```

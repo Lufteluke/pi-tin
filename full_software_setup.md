@@ -111,17 +111,6 @@ git clone https://github.com/jackw01/GPIOnext.git
 bash GPIOnext/install.sh
 ```
 
-## 10. set up gamepad in RetroPie
-
-a
-
-Edit `/opt/retropie/configs/all/retroarch/autoconfig/GPIOnext Joypad 1.cfg` and add these lines at the end to enable volume control using the hotkey.
-
-```txt
-input_volume_up_axis = "-1"
-input_volume_down_axis = "+1"
-```
-
 ## 11. update RetroPie
 
 https://retropie.org.uk/docs/Updating-RetroPie/#:~:text=The%20conventional%20way%20to%20update,%2DSetup%2Fretropie_setup.sh%20.
