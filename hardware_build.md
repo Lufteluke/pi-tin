@@ -1,7 +1,3 @@
----
-layout: alleycatengineering
----
-
 # Hardware
 
 **Important: Read through all the instructions thoroughly before building. This includes the software setup guide and the final assembly instructions for your chosen build option.**

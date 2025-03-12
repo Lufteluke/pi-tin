@@ -1,7 +1,3 @@
----
-layout: alleycatengineering
----
-
 # Final Assembly (Altoids Tin Version)
 
 **Important: Clean surfaces with isopropyl alcohol before using glue or double-sided tape.**

@@ -1,7 +1,3 @@
----
-layout: alleycatengineering
----
-
 # Final Assembly (3D Printed Version)
 
 ## 1. test fit the PCB
