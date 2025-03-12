@@ -1,3 +1,7 @@
+---
+layout: alleycatengineering
+---
+
 # Hardware
 
 **Important: Read through all the instructions thoroughly before building. This includes the software setup guide and the final assembly instructions for your chosen build option.**
@@ -11,14 +15,14 @@
 - MicroSD card, 8GB or larger
 - speaker ([CUI CMS-151125-076S-67](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-151125-076S-67/9561097))
 - display interconnect cable ([GCT 10-08-A-0050-C-4-08-4-T](https://www.digikey.com/en/products/detail/gct/10-08-A-0050-C-4-08-4-T/22247571))
-- 3D printed front panel
+- 3D printed faceplate
 - buttons (either 3D printed or DS Lite buttons)
 - 3D printed TPU button inserts/membranes (exact parts needed depend on buttons used)
 
 ### for 3D printed case version
 
 - 2000mAH LiPo battery, 8.0x38x60mm ([Adafruit 2011](https://www.adafruit.com/product/2011))
-- 3D printed case back
+- 3D printed lower case
 - 3D printed display housing
 - 3D printed display bezel
 
@@ -29,7 +33,8 @@
 - 8x 4x2mm neodymium disc magnets
 - 3D printed rear housing
 - 3D printed display mount
-- 3D printed lid magnet holder
+- 3D printed lid stop
+- 3D printed lid clip
 - 4x 3D printed rear button
 - 3D printed drill guide
 
@@ -46,11 +51,12 @@
 ### for Altoids tin version
 
 - drill with 1/16in (1.5mm), 1/8in (3mm), and 3/16in (5mm) drill bits
-- needle files, or Dremel with small diamond or aluminum oxide burr bits
+- needle files, or Dremel with small abrasive burr bits
 - small flush wire cutters
 - wood block that fits inside open Altoids tin, to support it during drilling
 - isopropyl alcohol, 91%
 - thin double-sided tape (such as 3M 468MP or Tesa 61395)
+- 2mm thick x 10mm wide EPDM foam tape or similar adhesive-backed foam
 - cyanoacrylate adhesive (super glue)
 
 ## 3D printing instructions
@@ -72,6 +78,8 @@ The photos below show all the parts required for each build option, assuming 3D 
 ### 3D printed parts for Altoids tin version
 
 ![](images/mint_tin_parts.jpg)
+
+<small>The parts shown in the photos were printed with Bambu Lab Translucent PETG and PolyMaker PolyFlex TPU95.</small>
 
 ## 1. solder the Raspberry Pi to the main PCB
 

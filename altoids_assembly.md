@@ -1,3 +1,7 @@
+---
+layout: alleycatengineering
+---
+
 # Final Assembly (Altoids Tin Version)
 
 **Important: Clean surfaces with isopropyl alcohol before using glue or double-sided tape.**
@@ -22,6 +26,10 @@ Use a small piece of thin double-sided tape to secure the battery in place if de
 
 Check that the buttons on the front panel are not sticking. If they are, it is likely due to misalignment of the 3D printed membrane or defects on the 3D printed parts that need to be trimmed off.
 
+Attach a piece of EPDM foam tape to the side of the main PCB assembly as shown to help keep it centered inside the tin.
+
+![](images/mint_tin_foam_tape.jpg)
+
 ## 2. prepare the Altoids tin
 
 Align the drill guide with the tin as shown and use it to mark locations for drilling holes for the USB port and rear buttons. Mark the center of the holes using a center punch or scribe. Use caution if using an automatic center punch as it will leave large dents in the tin if nothing is placed on the other side of the thin metal.
@@ -34,17 +42,17 @@ Drill all holes with a 1/16in (1.5mm) drill bit. Drill out the four rear button 
 
 Thoroughly clean the tin to remove any metal shavings.
 
-## 3. install the lid holder
+## 3. install the lid stop
 
-Insert five 4x2mm neodymium disc magnets into the holes in the lid holder, applying a small dab of cyanoacrylate glue to hold each one in place.
-
-![](images/lid_holder_magnets.png)
-
-Attach the lid holder to the tin as shown using cyanoacrylate glue. The magnets should all come into close contact with the lid when the tin is opened.
+Attach the lid stop to the tin as shown using cyanoacrylate glue.
 
 ![](images/lid_holder_asm_2.jpg)
 
-![](images/lid_holder_asm_1.jpg)
+![](images/lid_holder_asm_1.png)
+
+Insert the 4x2mm neodymium disc magnet into the lid clip as shown, applying a small dab of cyanoacrylate glue to hold it in place.
+
+![](images/lid_clip_magnet.png)
 
 ## 4. display
 
@@ -74,6 +82,12 @@ Apply thin double-sided tape to the display mount. Attach it to the inside of th
 
 ## 5. final assembly
 
-Connect the display cable to the Main PCB following the same steps used to connect it to the Display PCB. Insert the Main PCB assembly into the Altoids tin. It is easiest to insert the bottom edge (Raspberry Pi side) first at an angle and then tilt the assembly into place. Check that the rear buttons and USB port line up with the cutouts and that the Main PCB assembly is sitting flush with the base of the tin. Check that the tin is still able to close, making sure that the display cable folds into the space between the front panel and the display instead of being pinched between the display and the tin.
+Connect the display cable to the Main PCB following the same steps used to connect it to the Display PCB. You may need to use tweezers to reach the locking flap on the connector. Insert the Main PCB assembly into the Altoids tin. It is easiest to insert the bottom edge (Raspberry Pi side) first at an angle and then tilt the assembly into place. Check that the rear buttons and USB port line up with the cutouts and that the Main PCB assembly is sitting flush with the base of the tin. Check that the tin is still able to close, making sure that the display cable folds into the space between the front panel and the display instead of being pinched between the display and the tin.
+
+The lid clip is designed to hold both the Main PCB assembly and lid of the tin in place, so the rear buttons can be pressed without holding down the front panel and the Pi Tin can be used upside down. The lid clip attaches to the edge of the tin as shown and can be stowed in the space to the right of the display when not in use.
+
+![](images/lid_clip_use.jpg)
+
+![](images/lid_clip_stowage.jpg)
 
 ![](images/mint_tin_finished.jpg)

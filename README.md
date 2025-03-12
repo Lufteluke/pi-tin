@@ -1,3 +1,7 @@
+---
+layout: alleycatengineering
+---
+
 # Pi Tin - the open source Raspberry Pi handheld retro gaming console
 
 ![](images/main.jpg)
@@ -22,7 +26,7 @@ Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D pri
 
 ## build options
 
-Pi Tin can either be built with a 3D printed clamshell case or built to fit inside an Altoids tin.
+Pi Tin can either be built with a 3D printed clamshell case (93 x 66 x 26.5mm) or built to fit inside an Altoids tin.
 
 ![](images/size_comparison.jpg)
 

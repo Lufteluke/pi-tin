@@ -1,3 +1,7 @@
+---
+layout: alleycatengineering
+---
+
 # Full Installation guide
 
 To install and configure all required software "from scratch" on top of a clean install of RetroPie, follow the instructions below.
