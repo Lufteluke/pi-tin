@@ -1,5 +1,9 @@
 remote_theme: jackw01/jackw01.github.io
-default-layout: alleycatengineering
+defaults:
+  - scope:
+      path: “"
+    values:
+      layout: alleycatengineering
 title: pi tin
 description: the open source raspberry pi handheld retro gaming console
 github:

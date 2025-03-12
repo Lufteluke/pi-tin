@@ -1,5 +1,7 @@
 # Final Assembly (Altoids Tin Version)
 
+<br>
+
 **Important: Clean surfaces with isopropyl alcohol before using glue or double-sided tape.**
 
 ## 1. complete the Main PCB assembly

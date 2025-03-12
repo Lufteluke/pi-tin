@@ -35,7 +35,7 @@ Edit `cmdline.txt` in the boot partition and remove `console=serial0,115200`. Th
 
 Edit `config.txt` in the boot partition and add the content below to the end of the file.
 
-```txt
+```conf
 # Enable GPIO power button functionality
 dtoverlay=gpio-shutdown,gpio_pin=7,active_low=0,gpio_pull=up
 dtoverlay=gpio-poweroff,gpiopin=3,active_low=1
@@ -60,7 +60,7 @@ We strongly recommend changing the user password since SSH and SMB are enabled. 
 
 Run the following commands to download the startup script and shutdown button handler and configure them to run at boot, before the GPIOnext service starts.
 
-```txt
+```shell
 curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/shutdown_handler.py > /usr/bin/shutdown_handler.py
 curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.sh > /usr/bin/pi_tin_startup.sh
 curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.service > /etc/systemd/system/pi_tin_startup.service
@@ -72,7 +72,7 @@ sudo systemctl start pi_tin_startup
 ```
 
 Run the following command to disable waiting for a network connection at boot.
-```
+```shell
 sudo raspi-config nonint do_boot_wait 1
 ```
 
@@ -80,7 +80,7 @@ sudo raspi-config nonint do_boot_wait 1
 
 Use Adafruit's setup script to install and configure fbcp for the ILI9341 2.8" TFT display. Select the `Cupcade (horizontal screen)`option.
 
-```txt
+```shell
 cd ~
 curl -O https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/pitft-fbcp.sh
 sudo bash pitft-fbcp.sh
@@ -90,7 +90,7 @@ sudo bash pitft-fbcp.sh
 
 Use Adafruit's setup script to MAX98357 I2S DAC. **Do not** enable the option to activate /dev/zero playback in the background.
 
-```txt
+```shell
 cd ~
 pip3 install adafruit-python-shell
 curl -O https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/main/i2samp.py
@@ -105,7 +105,7 @@ After rebooting, run `speaker-test -c2`. You should hear white noise from the sp
 
 // copy gpionext config
 
-```txt
+```shell
 cd ~
 git clone https://github.com/jackw01/GPIOnext.git
 bash GPIOnext/install.sh
@@ -123,14 +123,14 @@ a
 
 For more seamless operation, we recommend configuring RetroArch to automatically save the game state when exiting and load the saved state when starting. This setting can be changed later for individual ROMs. To do this, edit `/opt/retropie/configs/all/retroarch.cfg` and change the lines
 
-```txt
+```conf
 savestate_auto_load = "false"
 savestate_auto_save = "false"
 ```
 
 to
 
-```txt
+```conf
 savestate_auto_load = "true"
 savestate_auto_save = "true"
 ```

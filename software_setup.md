@@ -51,7 +51,7 @@ Pi Tin has a dedicated hotkey for RetroPie which is located directly above the p
 
 The volume control hotkeys must be set up after configuring the controller by manually editing the  configuration file. Log in via SSH and run `sudo nano /opt/retropie/configs/all/retroarch/autoconfig/GPIOnext Joypad 1.cfg`. Add these lines at the end to enable volume control using the hotkey and press `Ctrl+X`, then `Y`, then `Enter` to save.
 
-```txt
+```conf
 input_volume_up_axis = "-1"
 input_volume_down_axis = "+1"
 ```
