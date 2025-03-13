@@ -30,3 +30,6 @@ custom_buttons:
   - 2:
     url: https://github.com/jackw01/pi-tin/3d/pi_tin_stl.zip
     text: Download SD card image
+  - 3:
+    url: https://github.com/jackw01/pi-tin/3d/pi_tin_stl.zip
+    text: Get notified when kits are available

@@ -14,7 +14,7 @@
 - speaker ([CUI CMS-151125-076S-67](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-151125-076S-67/9561097))
 - display interconnect cable ([GCT 10-08-A-0050-C-4-08-4-T](https://www.digikey.com/en/products/detail/gct/10-08-A-0050-C-4-08-4-T/22247571))
 - 3D printed faceplate
-- buttons (either 3D printed or DS Lite buttons)
+- D-pad, A/B/X/Y, start, and select buttons (either 3D printed or DS Lite buttons)
 - 3D printed TPU button inserts/membranes (exact parts needed depend on buttons used)
 
 ### for 3D printed case version
@@ -65,7 +65,7 @@ All parts have a flat face and should be printed with this side facing down. All
 
 **Important: If using PETG, it is important to dry the filament before printing as these parts have somewhat tight tolerances and stringing or blobbing caused by wet filament can make them unusable.**
 
-STL files for all 3D printed parts can be downloaded [here (ZIP file)](3d/pi_tin_stl.zip).
+STL files for all 3D printed parts can be downloaded [here (ZIP file)](3d/pi_tin_stl.zip). They are organized in folders based on build variant and button type (3D printed or DS Lite buttons). Some parts have "x2" or similar at the end of the filename; this means that multiple copies of this part are required.
 
 The photos below show all the parts required for each build option, assuming 3D printed buttons. If using DS Lite buttons, the TPU button membranes (black) will look different.
 
@@ -77,7 +77,7 @@ The photos below show all the parts required for each build option, assuming 3D 
 
 ![](images/mint_tin_parts.jpg)
 
-<small>The parts shown in the photos were printed with Bambu Lab Translucent PETG and PolyMaker PolyFlex TPU95.</small>
+<small>All the parts shown in the photos were printed with a 0.6mm nozzle, using Bambu Lab PETG and PolyMaker PolyFlex TPU95.</small>
 
 ## 1. solder the Raspberry Pi to the main PCB
 
@@ -163,7 +163,11 @@ Without connecting the battery, connect the USB-C cable and press the power butt
 
 *Note: The power button cannot be used to shut down the Raspberry Pi until it is properly configured in software. If the Pi is powered on without the SD card installed or without the software configured, both the battery and USB-C cable will need to be disconnected to power it off.*
 
-Disconnect the USB-C cable to turn off power. Follow the [software setup guide](./software_setup) to install RetroPie on the Raspberry Pi and verify functionality.
+Disconnect the USB-C cable to turn off power.
+
+## next steps
+
+Follow the [software setup guide](./software_setup) to install RetroPie on the Raspberry Pi and verify functionality.
 
 Once you have installed RetroPie and verified that the hardware is working, continue to the final assembly guide for your build option.
 
