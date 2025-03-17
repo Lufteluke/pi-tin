@@ -6,7 +6,7 @@ Pi Tin is an open source retro gaming device designed around the Raspberry Pi Ze
 
 Pi Tin's gamepad uses the exact same Alps tactile switches and elastomer membrane design used in the Gameboy Advance SP and DSi to achieve superior button feel over designs using conductive rubber buttons or bare tactile switches. It features a soft power button to turn on or safely shut down the system with a single press, and is designed to be safe to use while charging and compatible with all USB-C cables and chargers. The battery lasts for up to 5 hours of gaming <small>(tested with GBA emulator on 3D printed case option - 2000mAh battery)</small>.
 
-Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D printed parts, and a few other components which are readily available from distributors. The PCBs can be manufactured by low-cost manufacturers like JLCPCB, but are very difficult to assemble by hand. We are working on making assembled PCBs and full kits available to purchase.
+Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D printed parts, and a few other components which are readily available from distributors. The PCBs can be manufactured by low-cost manufacturers like JLCPCB, but are very difficult to assemble by hand. We are working on making kits with assembled PCBs available to purchase.
 
 ![](images/main_pcb_1.jpg)
 
@@ -30,7 +30,7 @@ Pi Tin can either be built with a 3D printed clamshell case (93 x 66 x 26.5mm) o
 
 ![](images/altoids_rear.jpg)
 
-The Altoids tin build option is more difficult than the 3D printed case option; it requires additional tools and experience using them. It has poor ergonomics due to the constraints of building inside an Altoids tin and the battery capacity is 40% lower than the 3D printed case version. We **strongly** recommend the 3D printed case option for these reasons.
+The Altoids tin build option is more difficult than the 3D printed case option; it requires additional tools and experience using them. It has poor ergonomics due to the constraints of building inside an Altoids tin and the battery capacity is 40% lower than the 3D printed case version. We strongly recommend the 3D printed case option for these reasons.
 
 **Important: Read through all the instructions thoroughly before building. This is an intermediate level project and we don't recommend attempting it without prior electronics kit building experience.**
 

@@ -1,9 +1,23 @@
 remote_theme: jackw01/jackw01.github.io
+# used by SEO tag
 title: pi tin
 description: the open source raspberry pi handheld retro gaming console
+author:
+  name: Jack Whittaker
+  url: https://jackw01.github.io
+logo: https://jackw01.github.io/logo.png
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: images/3dp_case_finished.jpg
+social:
+  name: Jack Whittaker
+  links:
+    - https://github.com/jackw01
+    - https://www.linkedin.com/in/jack-whittaker-b35961183/
+# end seo
 alleycatengineering: true
-github:
-  is_project_page: false
 hide_first_h1: true
 plugins:
   - jekyll-seo-tag
@@ -26,10 +40,10 @@ nav_items:
 custom_buttons:
   - 1:
     url: https://github.com/jackw01/pi-tin/3d/pi_tin_stl.zip
-    text: Download STL files
+    text: Get notified when kits are available
   - 2:
     url: https://github.com/jackw01/pi-tin/3d/pi_tin_stl.zip
-    text: Download SD card image
+    text: Download STL files
   - 3:
     url: https://github.com/jackw01/pi-tin/3d/pi_tin_stl.zip
-    text: Get notified when kits are available
+    text: Download SD card image

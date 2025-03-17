@@ -61,9 +61,9 @@ We strongly recommend changing the user password since SSH and SMB are enabled. 
 Run the following commands to download the startup script and shutdown button handler and configure them to run at boot, before the GPIOnext service starts.
 
 ```shell
-curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/shutdown_handler.py > /usr/bin/shutdown_handler.py
-curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.sh > /usr/bin/pi_tin_startup.sh
-curl https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.service > /etc/systemd/system/pi_tin_startup.service
+sudo curl -o /usr/bin/shutdown_handler.py https://raw.githubusercontent.com/jackw01/pi-tin/main/software/shutdown_handler.py
+sudo curl -o /usr/bin/pi_tin_startup.sh https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.sh
+sudo curl -o /etc/systemd/system/pi_tin_startup.service https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.service
 sudo chmod +x /usr/bin/shutdown_handler.py
 sudo chmod +x /usr/bin/pi_tin_startup.sh
 sudo systemctl daemon-reload
@@ -92,22 +92,25 @@ Use Adafruit's setup script to MAX98357 I2S DAC. **Do not** enable the option to
 
 ```shell
 cd ~
+sudo apt-get update
+sudo apt-get install python3-pip
 pip3 install adafruit-python-shell
 curl -O https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/main/i2samp.py
 sudo -E env PATH=$PATH python3 i2samp.py
 ```
 
-Edit `/boot/config.txt` to change the line `dtoverlay=max98357a` to `dtoverlay=max98357a,no-sdmode=on`.
+Edit `/boot/config.txt` to change the line `dtoverlay=max98357a` to `dtoverlay=max98357a,no-sdmode=on` and change the line `dtparam=audio=on` to `#dtparam=audio=on`.
 
 After rebooting, run `speaker-test -c2`. You should hear white noise from the speaker.
 
 ## 9. set up gamepad driver
 
-// copy gpionext config
+Clone our fork of [GPIONext](https://github.com/jackw01/GPIOnext) (this fork supports using certain GPIO pins that the original does not) and download the config file. Run the install script 
 
 ```shell
 cd ~
 git clone https://github.com/jackw01/GPIOnext.git
+curl -o GPIOnext/config/config.db https://raw.githubusercontent.com/jackw01/pi-tin/main/software/config.db
 bash GPIOnext/install.sh
 ```
 

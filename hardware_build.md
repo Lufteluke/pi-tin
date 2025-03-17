@@ -10,7 +10,7 @@
 - Pi Tin Main PCB
 - Pi Tin Display Interconnect PCB
 - 2.8" ILI9341 TFT display with 50-pin FPC connector ([Adafruit 1774](https://www.adafruit.com/product/1774))
-- MicroSD card, 8GB or larger
+- Micro SD card, 8GB or larger
 - speaker ([CUI CMS-151125-076S-67](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-151125-076S-67/9561097))
 - display interconnect cable ([GCT 10-08-A-0050-C-4-08-4-T](https://www.digikey.com/en/products/detail/gct/10-08-A-0050-C-4-08-4-T/22247571))
 - 3D printed faceplate
@@ -45,6 +45,7 @@
 - multimeter with continuity test setting
 - 1.5mm hex screwdriver or allen key
 - fine point tweezers
+- computer with Micro SD card reader
 
 ### for Altoids tin version
 
