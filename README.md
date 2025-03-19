@@ -12,11 +12,11 @@ Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D pri
 
 ![](images/main_pcb_2.jpg)
 
-[Schematic as PDF (Rev. 2)](pcb/pcb_main_r2/pi_tin_main_pcb_r2.pdf)
+[Schematic as PDF (Rev. 2)](pcb_main_r2/pi_tin_main_pcb_r2.pdf)
 
 ![](images/display_pcb.jpg)
 
-[Schematic as PDF (Rev. 2)](pcb/pcb_display_r2/pi_tin_display_pcb_r2.pdf)
+[Schematic as PDF (Rev. 2)](pcb_display_r2/pi_tin_display_pcb_r2.pdf)
 
 *Note: Rev. 1 PCBs shown, Rev. 2 PCBs have minor differences.*
 

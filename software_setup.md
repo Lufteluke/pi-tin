@@ -4,7 +4,7 @@ For convenience, we provide a SD card image based on [RetroPie 4.8](https://retr
 
 ## 1. install the prebuilt image
 
-Download the Pi Tin prebuilt image [here (1.7GB zip file)](github releases). Unzip and write the image to a 8GB or larger MicroSD card using [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/), [Raspberry Pi Imager](https://www.raspberrypi.com/software/), or [Etcher](https://etcher.balena.io/).
+Download the Pi Tin prebuilt image [here (1.7GB zip file)](https://github.com/jackw01/pi-tin/releases/download/v1.0/pi_tin_20250316.zip). Unzip and write the image to a 8GB or larger MicroSD card using [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/), [Raspberry Pi Imager](https://www.raspberrypi.com/software/), or [Etcher](https://etcher.balena.io/).
 
 ## 2. set up wifi
 

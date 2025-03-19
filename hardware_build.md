@@ -94,9 +94,11 @@ Mate the Raspberry Pi to the Main PCB as shown, with the blank side of the Pi fa
 - Wait a few seconds for the solder to melt and stick to the walls of the hole and the pad on the Main PCB.
 - Remove the soldering iron. If the solder does not form a smooth cup shape inside the hole, it is likely that it did not adhere to the pad on the Main PCB. Add some more flux and melt the solder again, holding the soldering iron in place for longer this time.
 
-Inspect the PCBs. If the Raspberry Pi is no longer aligned with the white outline on the main PCB or the two PCBs are not flush with each other where pin 2 is located, carefully reheat and reposition the solder joint.
-
 **Important: Be very careful handling the PCBs until more than a few of the Raspberry Pi pins have been soldered as it is easy to accidentally rip the pads off the Main PCB.**
+
+Inspect the PCBs. If the Raspberry Pi is no longer aligned with the white outline on the main PCB or the two PCBs are not flush with each other where pin 2 is located, carefully reheat and reposition the solder joint. When the Pi is properly aligned, the white outline should be barely visible underneath the Pi in all three areas outlined below.
+
+![](images/pi_alignment.png)
 
 **Important: The Raspberry Pi must be lined up exactly with the outline printed on the Main PCB. Otherwise, the PCB assembly may not fit correctly into the 3D printed parts. It is very difficult to correct any misalignment after more than one Raspberry Pi pad has been soldered, so it is critical to ensure that the PCBs are aligned after soldering the first pad.**
 
