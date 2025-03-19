@@ -39,11 +39,11 @@ nav_items:
     text: Final Assembly (Altoids Tin Version)
 custom_buttons:
   - 1:
-    url: https://github.com/jackw01/pi-tin/3d/pi_tin_stl.zip
+    url: https://sendfox.com/alleycatengineering
     text: Get notified when kits are available
   - 2:
-    url: https://github.com/jackw01/pi-tin/3d/pi_tin_stl.zip
+    url: https://jackw01.github.io/pi-tin/3d/pi_tin_stl.zip
     text: Download STL files
   - 3:
-    url: https://github.com/jackw01/pi-tin/3d/pi_tin_stl.zip
+    url: https://github
     text: Download SD card image

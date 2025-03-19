@@ -66,7 +66,7 @@ All parts have a flat face and should be printed with this side facing down. All
 
 **Important: If using PETG, it is important to dry the filament before printing as these parts have somewhat tight tolerances and stringing or blobbing caused by wet filament can make them unusable.**
 
-STL files for all 3D printed parts can be downloaded [here (ZIP file)](3d/pi_tin_stl.zip). They are organized in folders based on build variant and button type (3D printed or DS Lite buttons). Some parts have "x2" or similar at the end of the filename; this means that multiple copies of this part are required.
+STL files for all 3D printed parts can be downloaded [here (ZIP file)](3d/pi_tin_stl.zip). They are organized in folders based on build variant and button type (3D printed or DS Lite buttons). Some parts have "x2" or similar at the end of the filename; this means that multiple copies of this part are required. There are separate versions of the faceplate for opaque and translucent materials - the version for opaque materials has a hole exposing the battery indicator LEDs.
 
 The photos below show all the parts required for each build option, assuming 3D printed buttons. If using DS Lite buttons, the TPU button membranes (black) will look different.
 

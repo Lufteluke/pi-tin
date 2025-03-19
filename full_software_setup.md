@@ -105,30 +105,48 @@ After rebooting, run `speaker-test -c2`. You should hear white noise from the sp
 
 ## 9. set up gamepad driver
 
-Clone our fork of [GPIONext](https://github.com/jackw01/GPIOnext) (this fork supports using certain GPIO pins that the original does not) and download the config file. Run the install script 
+Clone our fork of [GPIONext](https://github.com/jackw01/GPIOnext) (this fork supports using certain GPIO pins that the original does not) and download the config file. Run the install script and enter `n` when asked to run the configuration manager, then start the GPIOnext daemon. The EmulationStation UI should now respond to button presses.
 
 ```shell
 cd ~
 git clone https://github.com/jackw01/GPIOnext.git
 curl -o GPIOnext/config/config.db https://raw.githubusercontent.com/jackw01/pi-tin/main/software/config.db
 bash GPIOnext/install.sh
+gpionext start
 ```
 
-## 11. update RetroPie
+## 11. update RetroPie and OS packages
 
-https://retropie.org.uk/docs/Updating-RetroPie/#:~:text=The%20conventional%20way%20to%20update,%2DSetup%2Fretropie_setup.sh%20.
+Run the RetroPie setup script.
 
-## 12. change RetroPie theme
+```shell
+sudo ~/RetroPie-Setup/retropie_setup.sh
+```
 
-a
+Follow the prompts and select `Update` to update installed packages. Select `Yes` on the prompt asking to update OS packages. This will take a while.
+
+## 12. install RetroPie theme
+
+To install a theme that works better on small displays, first run the RetroPie setup script.
+
+```shell
+sudo ~/RetroPie-Setup/retropie_setup.sh
+```
+
+Select `Configuration / Tools > esthemes > Install anthonycaccese/tft`. Exit the setup script. Run the command below to create the EmulationStation settings file, which shouldn't exist yet, and set the theme to `tft`.
+
+```shell
+cd ~
+curl -o .emulationstation/es_settings.cfg https://raw.githubusercontent.com/jackw01/pi-tin/main/software/es_settings.cfg
+```
 
 ## 13. configure RetroArch
 
 For more seamless operation, we recommend configuring RetroArch to automatically save the game state when exiting and load the saved state when starting. This setting can be changed later for individual ROMs. To do this, edit `/opt/retropie/configs/all/retroarch.cfg` and change the lines
 
 ```conf
-savestate_auto_load = "false"
-savestate_auto_save = "false"
+savestate_auto_load = ...
+savestate_auto_save = ...
 ```
 
 to
@@ -139,6 +157,10 @@ savestate_auto_save = "true"
 ```
 
 When combined with the Pi Tin shutdown handler script, this change will allow the state to be automatically saved before the system shuts down.
+
+## 14. set volume
+
+Run `amixer set PCM 50%` to set the volume to a more reasonable level.
 
 ## additional notes
 

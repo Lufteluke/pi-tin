@@ -4,7 +4,7 @@ For convenience, we provide a SD card image based on [RetroPie 4.8](https://retr
 
 ## 1. install the prebuilt image
 
-Download the Pi Tin prebuilt image [here](onedrive). Write the image to a 8GB or larger MicroSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/), [Etcher](https://etcher.balena.io/), or [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/).
+Download the Pi Tin prebuilt image [here (1.7GB zip file)](github releases). Unzip and write the image to a 8GB or larger MicroSD card using [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/), [Raspberry Pi Imager](https://www.raspberrypi.com/software/), or [Etcher](https://etcher.balena.io/).
 
 ## 2. set up wifi
 
@@ -29,9 +29,11 @@ network={
 # RETROPIE CONFIG END
 ```
 
+Eject the SD card.
+
 ## 3. boot Raspberry Pi and verify functionality
 
-With the display connected, insert the SD card, connect the USB-C cable, and press the power button to power up the Raspberry Pi. If the hardware build and software installation were done correctly, the display should show a blank white screen at power on, then within 30 seconds display the RetroPie splash screen and the EmulationStation launcher. Press and release the power button again and the Raspberry Pi should safely shut down and the display should turn off completely. If the Raspberry Pi does not shut down, it is likely because one or more of the pads is not soldered properly.
+With the display connected, insert the SD card, connect the USB-C cable, and press the power button to power up the Raspberry Pi. If the hardware build and software installation were done correctly, the display should show a blank white screen at power on, then within 30 seconds display the RetroPie splash screen and the EmulationStation launcher. Hold the power button for about half a second and release it. The Raspberry Pi should safely shut down and the display should turn off completely. If the Raspberry Pi does not shut down, it is likely because one or more of the pads is not soldered properly.
 
 ## 4. connect via SSH and change password
 
@@ -47,9 +49,11 @@ Follow the [RetroPie Getting Started guide](https://retropie.org.uk/docs/Control
 
 Pi Tin has a dedicated hotkey for RetroPie which is located directly above the power button. This button is configurable during the controller setup process. The special functions shown below can be used by pressing the buttons while holding down the hotkey.
 
-![](images/hotkeys.png)
+![](images/hotkeys.jpg)
 
-The volume control hotkeys must be set up after configuring the controller by manually editing the  configuration file. Log in via SSH and run `sudo nano /opt/retropie/configs/all/retroarch/autoconfig/GPIOnext Joypad 1.cfg`. Add these lines at the end to enable volume control using the hotkey and press `Ctrl+X`, then `Y`, then `Enter` to save.
+### configure volume control
+
+The volume control hotkeys must be set up after configuring the controller by manually editing the  configuration file. Log in via SSH and run `sudo nano /opt/retropie/configs/all/retroarch/autoconfig/GPIOnext Joypad 1.cfg`. Add these lines at the end of the file to enable volume control using the hotkey and press `Ctrl+X`, then `Y`, then `Enter` to save.
 
 ```conf
 input_volume_up_axis = "-1"
