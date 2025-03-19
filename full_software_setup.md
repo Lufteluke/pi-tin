@@ -115,7 +115,7 @@ bash GPIOnext/install.sh
 gpionext start
 ```
 
-## 11. update RetroPie and OS packages
+## 10. update RetroPie and OS packages
 
 Run the RetroPie setup script.
 
@@ -125,7 +125,7 @@ sudo ~/RetroPie-Setup/retropie_setup.sh
 
 Follow the prompts and select `Update` to update installed packages. Select `Yes` on the prompt asking to update OS packages. This will take a while.
 
-## 12. install RetroPie theme
+## 11. install RetroPie theme
 
 To install a theme that works better on small displays, first run the RetroPie setup script.
 
@@ -140,7 +140,7 @@ cd ~
 curl -o .emulationstation/es_settings.cfg https://raw.githubusercontent.com/jackw01/pi-tin/main/software/es_settings.cfg
 ```
 
-## 13. configure RetroArch
+## 12. configure RetroArch
 
 For more seamless operation, we recommend configuring RetroArch to automatically save the game state when exiting and load the saved state when starting. This setting can be changed later for individual ROMs. To do this, edit `/opt/retropie/configs/all/retroarch.cfg` and change the lines
 
@@ -158,13 +158,13 @@ savestate_auto_save = "true"
 
 When combined with the Pi Tin shutdown handler script, this change will allow the state to be automatically saved before the system shuts down.
 
-## 14. set volume
+## 13. set volume
 
 Run `amixer set PCM 50%` to set the volume to a more reasonable level.
 
 ## additional notes
 
-Do not install `pulseaudio`. In testing we found that it interacts poorly with the MAX98357 I2S DAC+amp and causes it to draw so much current that it triggers the battery protection circuit.
+For now, do not install `pulseaudio` to use Bluetooth audio devices. In testing we found that it interacts poorly with the MAX98357 I2S DAC+amp and causes it to draw so much current that it triggers the battery protection circuit.
 
 ## sources
 

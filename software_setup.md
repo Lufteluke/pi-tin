@@ -14,8 +14,6 @@ After writing the SD card, eject and reinsert it to access the newly created boo
 
 Create a file called `wpa_supplicant.conf` in the root directory of the boot partition with the contents below, replacing `SSID` and `PASSWORD` with your network name and password. You can add multiple networks by copying the `network={}` block. If you are outside of the United States, change `country=US` to your country's [ISO two-letter country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 
-`wpa_supplicant.conf`
-
 ```conf
 country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
