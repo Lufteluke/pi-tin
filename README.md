@@ -38,6 +38,8 @@ Build instructions for both options start with the [hardware build guide](./hard
 
 ## license
 
+The source files for this project are located at [https://github.com/jackw01/pi-tin/](https://github.com/jackw01/pi-tin/).
+
 The PCB schematics, layouts, and Gerber files and the 3D CAD files for this project are released under the CERN Open Hardware Licence Version 2 - Weakly Reciprocal (CERN-OHL-W V2). The files in the `software` directory are in the public domain, free of copyright restrictions. The text, photographs, and illustrations on this website may not be reproduced without permission.
 
 ## legal disclaimer
