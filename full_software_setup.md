@@ -1,4 +1,4 @@
-# Full Installation guide
+# Pi Tin Full Software Installation Guide
 
 To install and configure all required software "from scratch" on top of a clean install of RetroPie, follow the instructions below.
 

@@ -1,6 +1,6 @@
 remote_theme: jackw01/jackw01.github.io
 # used by SEO tag
-title: pi tin
+title: alley cat engineering
 description: the open source raspberry pi handheld retro gaming console
 author:
   name: Jack Whittaker
@@ -19,6 +19,7 @@ social:
 # end seo
 alleycatengineering: true
 hide_first_h1: true
+title_h1_override: pi tin
 plugins:
   - jekyll-seo-tag
 nav_items:

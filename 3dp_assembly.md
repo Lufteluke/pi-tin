@@ -1,4 +1,4 @@
-# Final Assembly (3D Printed Version)
+# Pi Tin Final Assembly (3D Printed Version)
 
 ## 1. test fit the PCB
 

@@ -1,4 +1,4 @@
-# Pi Tin - the open source Raspberry Pi handheld retro gaming console
+# Pi Tin
 
 ![](images/main.jpg)
 

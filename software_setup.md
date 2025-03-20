@@ -1,4 +1,4 @@
-# Software Setup
+# Pi Tin Software Setup
 
 For convenience, we provide a SD card image based on [RetroPie 4.8](https://retropie.org.uk/download/) with all required software installed and configured. This guide assumes you are using the prebuilt image. If not, full instructions for installing the required software on top of a clean install of RetroPie are [here](./full_software_setup).
 
