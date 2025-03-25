@@ -44,7 +44,7 @@ The PCB schematics, layouts, and Gerber files and the 3D CAD files for this proj
 
 ## mintypi disclaimer
 
-We are aware of the existence of MintyPi; our main motivation for building this project was that MintyPi is no longer possible to build as it relies on proprietary parts that are not sold anymore. MintyPi was a commercial product; it was not open source and it was also not released under a license requiring attribution for derivative works. The creators did not release a schematic of the custom PCBs or even documentation of what drivers/software were installed on their prebuilt SD card image. 
+We are aware of the existence of MintyPi; our main motivation for building this project was that MintyPi is no longer possible to build as it relies on proprietary parts that are not sold anymore. MintyPi was a closed-source commercial product and it was not released under a license limiting or requiring attribution for derivative works. The creators did not release a schematic of the custom PCBs or even documentation of what drivers/software were installed on their prebuilt SD card image. 
 
 ## legal disclaimer
 
