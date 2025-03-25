@@ -42,6 +42,10 @@ The source files for this project are located at [https://github.com/jackw01/pi-
 
 The PCB schematics, layouts, and Gerber files and the 3D CAD files for this project are released under the CERN Open Hardware Licence Version 2 - Weakly Reciprocal (CERN-OHL-W V2). The files in the `software` directory are in the public domain, free of copyright restrictions. The text, photographs, and illustrations on this website may not be reproduced without permission.
 
+## mintypi disclaimer
+
+We are aware of the existence of MintyPi; our main motivation for building this project was that MintyPi is no longer possible to build as it relies on proprietary parts that are not sold anymore. MintyPi was a commercial product; it was not open source and it was also not released under a license requiring attribution for derivative works. The creators did not release a schematic of the custom PCBs or even documentation of what drivers/software were installed on their prebuilt SD card image. 
+
 ## legal disclaimer
 
 Any trademarked product names found on this website belong to their respective owners; this project is in no way affiliated with or endorsed by these companies. Pi Tin is designed to run [RetroPie](https://retropie.org.uk/), which is open source software released under the GPL. The prebuilt RetroPie disk image we provide does not contain any copyrighted ROMs or games. Pi Tin is not designed to enable illegal activity; we do not condone piracy and we will not provide support to anyone looking to obtain copyrighted content. Posting requests for copyrighted ROMs or other piracy-related content on GitHub issues or discussions will result in deletion and a ban.
