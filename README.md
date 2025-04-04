@@ -1,8 +1,8 @@
 # Pi Tin
 
-![](images/main.jpg)
+## Update: we started a Kickstarter campaign and are now taking preorders for kits [here](https://www.kickstarter.com/projects/soaporsalad/pi-tin-diy-game-emulation-console-in-a-tin?ref=profile_created&category_id=334)!
 
-**Update: we started a Kickstarter campaign and are now taking preorders for kits [here](https://www.kickstarter.com/projects/soaporsalad/pi-tin-diy-game-emulation-console-in-a-tin?ref=profile_created&category_id=334)**
+![](images/main.jpg)
 
 Pi Tin is an open source retro gaming device designed around the Raspberry Pi Zero 2 W and a 2.8" 320x240 TFT display, the largest readily available size that will fit into an Altoids tin. The Pi Zero 2 W is capable of emulating most SNES, GBA, PS1, Genesis/Megadrive, and even some N64 games.
 
