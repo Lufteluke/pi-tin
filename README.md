@@ -1,6 +1,6 @@
 # Pi Tin
 
-## Update: our Kickstarter is fully funded! We are still taking preorders for kits [here](https://www.kickstarter.com/projects/soaporsalad/pi-tin-diy-game-emulation-console-in-a-tin?ref=profile_created&category_id=334) until May 3 2025!
+## Update: our Kickstarter is fully funded! We are still taking preorders for kits [here](https://www.kickstarter.com/projects/soaporsalad/pi-tin-diy-game-emulation-console-in-a-tin?ref=profile_created&category_id=334) until May 3 2025.
 
 ![](images/main.jpg)
 
