@@ -4,7 +4,7 @@ Before=gpionext.service
 
 [Service]
 User=root
-Type=simple
+Type=forking
 ExecStart=/usr/bin/pi_tin_startup.sh
 
 [Install]

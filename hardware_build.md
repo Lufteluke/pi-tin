@@ -4,7 +4,7 @@
 
 ## required parts
 
-- Raspberry Pi Zero 2 W
+- Raspberry Pi Zero 2 W (Pi Zero 1 not tested, and will probably not work)
 - Pi Tin Main PCB
 - Pi Tin Display Interconnect PCB
 - 2.8" ILI9341 TFT display with 50-pin FPC connector ([Adafruit 1774](https://www.adafruit.com/product/1774))
@@ -26,7 +26,7 @@
 
 - 1200mAH LiPo battery, 5.0x35x62mm ([Adafruit 258](https://www.adafruit.com/product/258))
 - Altoids Classic 1.76oz tin (other brands or sizes will not work)
-- 8x 4x2mm neodymium disc magnets
+- 4x 4x2mm neodymium disc magnets
 - 3D printed rear housing
 - 3D printed display mount
 - 3D printed lid stop
@@ -80,11 +80,11 @@ The photos below show all the parts required for each build option, assuming 3D 
 
 ## 1. solder the Raspberry Pi to the main PCB
 
-**Important: Use a conical or chisel type soldering iron tip that is narrow enough to fit inside one of the 40-pin header holes on the Raspberry Pi.**
+**Important: Use a conical or chisel type soldering iron tip that is narrow enough to fit through one of the 40-pin header holes on the Raspberry Pi. If your tip is not narrow enough, it will be very difficult to solder the boards together correctly.**
 
 Before starting, apply a thin layer of flux to the array of 40 square pads on the Main PCB.
 
-Mate the Raspberry Pi to the Main PCB as shown, with the blank side of the Pi facing upwards. Using small spring clamps or binder clips, clamp the PCBs together at the mounting hole next to Raspberry Pi pin 2 (circled) and the opposite corner of the Raspberry Pi, keeping the Raspberry Pi aligned with the outline on the Main PCB.
+Place the Raspberry Pi on the Main PCB as shown, with the blank side of the Pi facing upwards. Using small spring clamps or binder clips, clamp the PCBs together at the mounting hole next to Raspberry Pi pin 2 (circled) and the opposite corner of the Raspberry Pi, keeping the Raspberry Pi aligned with the outline on the Main PCB.
 
 ![](images/pcb_with_pi.png)
 
@@ -96,9 +96,9 @@ Mate the Raspberry Pi to the Main PCB as shown, with the blank side of the Pi fa
 
 **Important: Be very careful handling the PCBs until more than a few of the Raspberry Pi pins have been soldered as it is easy to accidentally rip the pads off the Main PCB.**
 
-Inspect the PCBs. If the Raspberry Pi is no longer aligned with the white outline on the main PCB or the two PCBs are not flush with each other where pin 2 is located, carefully reheat and reposition the solder joint. When the Pi is properly aligned, the white outline should be barely visible underneath the Pi in all three areas outlined below.
+Inspect the PCBs. If the Raspberry Pi is no longer aligned with the white outline on the main PCB or the two PCBs are not flush with each other where pin 2 is located, carefully reheat and reposition the solder joint. When the Pi is properly aligned, all three mounting holes should be centered and the white outline should be barely visible underneath the Pi.
 
-![](images/pi_alignment.png)
+![](images/alignment_example.jpg)
 
 **Important: The Raspberry Pi must be lined up exactly with the outline printed on the Main PCB. Otherwise, the PCB assembly may not fit correctly into the 3D printed parts. It is very difficult to correct any misalignment after more than one Raspberry Pi pad has been soldered, so it is critical to ensure that the PCBs are aligned after soldering the first pad.**
 
@@ -112,7 +112,7 @@ Following the diagram below, use a multimeter to test for continuity between eac
 
 ![](images/testpoints.png)
 
-If any pads do not show continuity with their test point, add more flux to the solder joint and melt the solder again, holding the soldering iron tip inside the Raspberry Pi plated hole for at least 10 seconds.
+If any pads do not show continuity with their test point, add more flux to the solder joint and melt the solder again, holding the soldering iron tip inside the Raspberry Pi plated hole for at least 5 seconds.
 
 ## 3. display PCB assembly
 

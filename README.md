@@ -1,6 +1,6 @@
 # Pi Tin
 
-## Update: we started a Kickstarter campaign and are now taking preorders for kits [here](https://www.kickstarter.com/projects/soaporsalad/pi-tin-diy-game-emulation-console-in-a-tin?ref=profile_created&category_id=334)!
+## Update: our Kickstarter is fully funded! We are still taking preorders for kits [here](https://www.kickstarter.com/projects/soaporsalad/pi-tin-diy-game-emulation-console-in-a-tin?ref=profile_created&category_id=334) until May 3 2025!
 
 ![](images/main.jpg)
 
@@ -8,19 +8,16 @@ Pi Tin is an open source retro gaming device designed around the Raspberry Pi Ze
 
 Pi Tin's gamepad uses the exact same Alps tactile switches and elastomer membrane design used in the Gameboy Advance SP and DSi to achieve superior button feel over designs using conductive rubber buttons or bare tactile switches. It features a soft power button to turn on or safely shut down the system with a single press, and is designed to be safe to use while charging and compatible with all USB-C cables and chargers. The battery lasts for up to 5 hours of gaming <small>(tested on 3D printed case option - 2000mAh battery)</small>.
 
-Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D printed parts, and a few other components which are readily available from distributors. The PCBs can be manufactured by low-cost manufacturers like JLCPCB, but they require advanced soldering skills and ideally both a hot plate and hot air station to assemble by hand. We are working on making kits with assembled PCBs available to purchase.
+Building a Pi Tin requires a Raspberry Pi Zero 2 W, two custom PCBs, some 3D printed parts, and a few other components which are readily available from distributors. The PCBs require advanced soldering skills and ideally both a hot plate and hot air station to assemble by hand. We are working on making kits with assembled PCBs available to purchase.
 
-![](images/main_pcb_1.jpg)
+Shown below are Rev. 2 PCBs, manufactured by [PCBWay](https://www.pcbway.com/). PCBWay reached out to sponsor this project and I was excited to work with them as I have used PCBWay before at work and have been consistently satisfied with their customization options, turnkey parts sourcing ability, and very responsive customer support. The quality of PCBs they delivered here was excellent as always.
 
-![](images/main_pcb_2.jpg)
+![](images/pcbway_pcbs.jpg)
 
-[Schematic as PDF (Rev. 2)](pcb_main_r2/pi_tin_main_pcb_r2.pdf)
+[Main PCB Schematic as PDF (Rev. 2)](pcb_main_r2/pi_tin_main_pcb_r2.pdf)
+[Display PCB Schematic as PDF (Rev. 2)](pcb_display_r2/pi_tin_display_pcb_r2.pdf)
 
-![](images/display_pcb.jpg)
-
-[Schematic as PDF (Rev. 2)](pcb_display_r2/pi_tin_display_pcb_r2.pdf)
-
-*Note: Rev. 1 PCBs shown, Rev. 2 PCBs have minor differences.*
+*Note: Most other photos in this guide show Rev. 1 PCBs.*
 
 ## build options
 
@@ -46,7 +43,7 @@ The PCB schematics, layouts, and Gerber files and the 3D CAD files for this proj
 
 ## mintypi disclaimer
 
-We are aware of the existence of MintyPi; our main motivation for building this project was that MintyPi is no longer possible to build as it relies on proprietary parts that are not sold anymore. MintyPi was a closed-source commercial product and it was not released under a license limiting or requiring attribution for derivative works. The creators did not release a schematic of the custom PCBs or even documentation of what drivers/software were installed on their prebuilt SD card image. 
+We are aware of the existence of MintyPi; our main motivation for building this project was that MintyPi is no longer possible to build as it relies on proprietary parts that are not sold anymore. MintyPi was a closed-source commercial product and it was not released under a license limiting or requiring attribution for derivative works. The creators did not release a schematic of the custom PCBs or even documentation of what drivers/software were installed on their prebuilt SD card image.
 
 ## legal disclaimer
 
