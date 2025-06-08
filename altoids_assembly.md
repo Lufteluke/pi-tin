@@ -52,9 +52,9 @@ Insert the 4x2mm neodymium disc magnet into the lid clip as shown, applying a sm
 
 ## 4. display
 
-Use thin double-sided tape to attach the Display PCB to the rear of the display in its natural resting position, as shown below. The Display PCB should not overhang the edges of the display module and the display interconnect cable should be roughly centered with the viewing area of the display.
+*Note: 3D printed parts in Altoids tin kits will have tape pre-applied. Rev. 1 Display PCB shown, Rev. 2 will differ slightly.*
 
-*Note: Rev. 1 Display PCB shown, Rev. 2 will differ slightly.*
+Use thin double-sided tape to attach the Display PCB to the rear of the display in its natural resting position, as shown below. The Display PCB should not overhang the edges of the display module and the display interconnect cable should be roughly centered with the viewing area of the display.
 
 ![](images/display_tape_1.jpg)
 
@@ -67,6 +67,8 @@ Apply thin double-sided tape to the top of the Display PCB and the exposed corne
 ![](images/display_mount.png)
 
 Apply thin double-sided tape to the display mount. Attach it to the inside of the Altoids tin lid so that the display cable is horizontally centered within the tin.
+
+**Important: Do not glue the display mount into the tin using cyanoacrylate glue. If you do, it will be nearly impossible to access the display cable connector if the display FFC cable breaks or gets pulled out of the connector.**
 
 ![](images/display_tape_4.jpg)
 

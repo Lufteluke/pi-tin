@@ -1,7 +1,5 @@
 # Pi Tin
 
-## Update: our Kickstarter is fully funded! We are still taking preorders for kits [here](https://www.kickstarter.com/projects/soaporsalad/pi-tin-diy-game-emulation-console-in-a-tin?ref=profile_created&category_id=334) until May 3 2025.
-
 ![](images/main.jpg)
 
 Pi Tin is an open source retro gaming device designed around the Raspberry Pi Zero 2 W and a 2.8" 320x240 TFT display, the largest readily available size that will fit into an Altoids tin. The Pi Zero 2 W is capable of emulating most SNES, GBA, PS1, Genesis/Megadrive, and even some N64 games.
@@ -14,8 +12,15 @@ Shown below are Rev. 2 PCBs, manufactured by [PCBWay](https://www.pcbway.com/). 
 
 ![](images/pcbway_pcbs.jpg)
 
+![](images/main_pcb_drawing.png)
+
 [Main PCB Schematic as PDF (Rev. 2)](pcb_main_r2/pi_tin_main_pcb_r2.pdf)
-[Display PCB Schematic as PDF (Rev. 2)](pcb_display_r2/pi_tin_display_pcb_r2.pdf)
+
+![](images/display_pcb_drawing.png)
+
+[Display PCB Schematic as PDF (Rev. 2a)](pcb_display_r2a/pi_tin_display_pcb_r2a.pdf)
+
+*Note 2025-06-07: Main PCB files have been updated with the practice boards included in the kits. Display PCB files have been updated to revision 2a with minor component changes and brightness control support. Previous revision files are in the old folder.*
 
 *Note: Most other photos in this guide show Rev. 1 PCBs.*
 

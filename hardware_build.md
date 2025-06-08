@@ -18,6 +18,9 @@
 ### for 3D printed case version
 
 - 2000mAH LiPo battery, 8.0x38x60mm ([Adafruit 2011](https://www.adafruit.com/product/2011))
+- 5x M2x12 socket head cap screw
+- 4x M2x4 socket head cap screw
+- 2x M2x20 socket head cap screw
 - 3D printed lower case
 - 3D printed display housing
 - 3D printed display bezel
@@ -26,6 +29,7 @@
 
 - 1200mAH LiPo battery, 5.0x35x62mm ([Adafruit 258](https://www.adafruit.com/product/258))
 - Altoids Classic 1.76oz tin (other brands or sizes will not work)
+- 6x M2x8 socket head cap screw
 - 4x 4x2mm neodymium disc magnets
 - 3D printed rear housing
 - 3D printed display mount
@@ -36,9 +40,9 @@
 
 ## required tools and materials
 
-- soldering iron with narrow conical or chisel tip
+- soldering iron with narrow conical tip
 - solder (63% tin / 37% lead solder, 0.6mm or smaller diameter recommended)
-- flux pen or paste flux (we recommend [Chip Quik NC191](https://www.digikey.com/en/products/detail/chip-quik-inc/NC191/11480391))
+- flux pen or paste flux (use rosin or no-clean flux only, not water soluble flux. we recommend [Chip Quik NC191](https://www.digikey.com/en/products/detail/chip-quik-inc/NC191/11480391))
 - two binder clips or small spring clamps (such as [Harbor Freight #69375](https://www.harborfreight.com/micro-spring-clamp-set-6-piece-69375.html))
 - multimeter with continuity test setting
 - 1.5mm hex screwdriver or allen key
@@ -48,7 +52,7 @@
 ### for Altoids tin version
 
 - drill with 1/16in (1.5mm), 1/8in (3mm), and 3/16in (5mm) drill bits
-- needle files, or Dremel with small abrasive burr bits
+- needle files, or rotary tool with small abrasive grinding bits
 - small flush wire cutters
 - wood block that fits inside open Altoids tin, to support it during drilling
 - isopropyl alcohol, 91%
@@ -58,13 +62,15 @@
 
 ## 3D printing instructions
 
-All parts except the button membranes should be printed in PETG or ABS with 0.2mm or 0.1mm layer height, using either a 0.4mm nozzle with 4 perimeters or 0.6mm nozzle with 3 perimeters. If using 3D printed buttons, they should be printed with 0.1mm layer height. The button membranes should be printed in 95A durometer TPU with 0.1mm layer height. If printing in TPU is not possible, a rigid material can be used, but the buttons will be louder and clickier and the rounded nub on the D-pad membrane may have to be trimmed as it is designed to compress slightly when printed in TPU.
+*Note 2025-06-07: STL files have been updated with some minor changes for manufacturability (including the option to print the A/B/X/Y buttons as one piece), and the Altoids tin display mount was significantly changed for compatibility with the displays that will be included in the kits.*
+
+All parts except the button membranes should be printed in PETG or ABS with 0.2mm or 0.1mm layer height, using either a 0.4mm nozzle with 4 perimeters or 0.6mm nozzle with 3 perimeters. If using 3D printed buttons, they should be printed with 0.1mm layer height. The button membranes should be printed in 95A durometer TPU with 0.1mm layer height. If printing in TPU is not possible, a rigid material can be used, but the buttons will be louder and clickier and the rounded nub on the D-pad membrane will have to be trimmed as it is designed to compress slightly when printed in TPU.
 
 All parts have a flat face and should be printed with this side facing down. All parts should be printable without supports on a well-tuned printer, but we recommend printing the case back and display bezel (3DP case version) or rear housing (Altoids tin version) with the "support on build plate only" option to achieve better quality counterbore holes.
 
 **Important: If using PETG, it is important to dry the filament before printing as these parts have somewhat tight tolerances and stringing or blobbing caused by wet filament can make them unusable.**
 
-STL files for all 3D printed parts can be downloaded [here (ZIP file)](3d/pi_tin_stl.zip). They are organized in folders based on build variant and button type (3D printed or DS Lite buttons). Some parts have "x2" or similar at the end of the filename; this means that multiple copies of this part are required. There are separate versions of the faceplate for opaque and translucent materials - the version for opaque materials has a hole exposing the battery indicator LEDs.
+STL files for all 3D printed parts can be downloaded [here (ZIP file)](3d/pi_tin_stl.zip). They are organized in folders based on build variant and button type (3D printed or DS Lite buttons). Some parts have "x2" or similar at the end of the filename, which means that multiple copies of that part are required. There are separate versions of the faceplate for opaque and translucent materials - the version for opaque materials has a hole exposing the battery indicator LEDs. The 3D printed A/B/X/Y buttons can either be printed individually or as one conjoined part; STL files for both options are included.
 
 The photos below show all the parts required for each build option, assuming 3D printed buttons. If using DS Lite buttons, the TPU button membranes (black) will look different.
 
@@ -154,17 +160,17 @@ We strongly recommend testing the functionality of the Raspberry Pi, Pi Tin PCBs
 
 ![](images/test_connections.jpg)
 
-Connect the Main PCB to a power source using a USB-C cable. The green LED should illuminate to indicate that the battery is charging. If it does not, either there is something wrong with the USB-C cable or power source, or the PCB and/or battery is damaged. Disconnect the USB-C cable and the battery.
+Connect the Main PCB to a power source using a USB-C cable. The green LED should illuminate to indicate that the battery is charging. If it does not, either there is something wrong with the USB-C cable or power source, or the PCB and/or battery is damaged.
 
 *Note: The green LED indicates that the battery is charging. It turns off when the battery is fully charged. The orange LED indicates that the battery voltage is low. The Raspberry Pi will automatically shut down when the battery is critically low.*
 
-Without connecting the battery, connect the USB-C cable and press the power button (the bottom-rightmost button, circled below). The display should turn on immediately and display a blank white screen. If it does not, the display is not receiving power. Double-check the display and cable connectors and all solder joints on the Raspberry Pi.
+Disconnect both the USB-C cable and the battery. Reconnect the USB-C cable and press the power button (the bottom-rightmost button, circled below). The display should turn on immediately and display a blank white screen. If it does not, the display is not receiving power. Double-check the display and cable connectors and all solder joints on the Raspberry Pi.
 
 ![](images/power_button.jpg)
 
 *Note: The power button cannot be used to shut down the Raspberry Pi until it is properly configured in software. If the Pi is powered on without the SD card installed or without the software configured, both the battery and USB-C cable will need to be disconnected to power it off.*
 
-Disconnect the USB-C cable to turn off power.
+Disconnect the USB-C cable to turn off the Pi.
 
 ## next steps
 
