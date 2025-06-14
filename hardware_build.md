@@ -144,6 +144,8 @@ Insert the buttons into the back of the front panel as shown. The A/B/X/Y button
 
 Insert the speaker into the front panel with the contacts facing upwards and to the left (away from the D-pad).
 
+**Important: avoid touching the front surface of the speaker.**
+
 ![](images/speaker_insertion.png)
 
 If using 3D printed buttons, place the 3D printed TPU A/B/X/Y and D-pad membranes over the buttons as shown.
