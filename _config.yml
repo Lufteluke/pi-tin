@@ -46,5 +46,5 @@ custom_buttons:
     url: https://jackw01.github.io/pi-tin/3d/pi_tin_stl.zip
     text: Download STL files
   - 3:
-    url: https://github.com/jackw01/pi-tin/releases/tag/v1.0
+    url: https://github.com/jackw01/pi-tin/releases/tag/v1.1
     text: Download SD card image

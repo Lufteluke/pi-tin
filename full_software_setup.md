@@ -58,13 +58,16 @@ We strongly recommend changing the user password since SSH and SMB are enabled. 
 
 ## 6. configure startup behavior
 
-Run the following commands to download the startup script and shutdown button handler and configure them to run at boot, before the GPIOnext service starts.
+Run the following commands to install required packages, download the startup script and button handlers, and configure them to run at boot, before the GPIOnext service starts.
 
 ```shell
+sudo apt-get install pigpio python-pigpio python3-pigpio
 sudo curl -o /usr/bin/shutdown_handler.py https://raw.githubusercontent.com/jackw01/pi-tin/main/software/shutdown_handler.py
+sudo curl -o /usr/bin/brightness_control.py https://raw.githubusercontent.com/jackw01/pi-tin/main/software/brightness_control.py
 sudo curl -o /usr/bin/pi_tin_startup.sh https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.sh
 sudo curl -o /etc/systemd/system/pi_tin_startup.service https://raw.githubusercontent.com/jackw01/pi-tin/main/software/pi_tin_startup.service
 sudo chmod +x /usr/bin/shutdown_handler.py
+sudo chmod +x /usr/bin/brightness_control.py
 sudo chmod +x /usr/bin/pi_tin_startup.sh
 sudo systemctl daemon-reload
 sudo systemctl enable pi_tin_startup
@@ -75,6 +78,8 @@ Run the following command to disable waiting for a network connection at boot.
 ```shell
 sudo raspi-config nonint do_boot_wait 1
 ```
+
+**Important: the startup shell script starts `pigpiod` with the `-t 0` argument to select the PWM clock peripheral. Running `pigpiod` without this argument will cause immediate physical damage to the speaker and/or audio amplifier.**
 
 ## 7. set up display
 

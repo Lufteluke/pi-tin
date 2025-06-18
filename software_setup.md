@@ -4,7 +4,7 @@ For convenience, we provide a SD card image based on [RetroPie 4.8](https://retr
 
 ## 1. install the prebuilt image
 
-Download the Pi Tin prebuilt image [here (1.7GB zip file)](https://github.com/jackw01/pi-tin/releases/download/v1.0/pi_tin_20250316.zip). Unzip and write the image to a 8GB or larger MicroSD card using [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/), [Raspberry Pi Imager](https://www.raspberrypi.com/software/), or [Etcher](https://etcher.balena.io/).
+Download the Pi Tin prebuilt image [here (2GB zip file)](https://github.com/jackw01/pi-tin/releases/download/v1.1/pi_tin_20250617.zip). Unzip and write the image to a 8GB or larger MicroSD card using [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/), [Raspberry Pi Imager](https://www.raspberrypi.com/software/), or [Etcher](https://etcher.balena.io/).
 
 ## 2. set up wifi
 
@@ -31,7 +31,7 @@ Eject the SD card.
 
 ## 3. boot Raspberry Pi and verify functionality
 
-With the display connected, insert the SD card, connect the USB-C cable, and press the power button to power up the Raspberry Pi. If the hardware build and software installation were done correctly, the display should show a blank white screen at power on, then within 30 seconds display the RetroPie splash screen and the EmulationStation launcher. Hold the power button for about half a second and release it. The Raspberry Pi should safely shut down and the display should turn off completely. If the Raspberry Pi does not shut down, it is likely because one or more of the pads is not soldered properly.
+With the display connected, insert the SD card, connect the USB-C cable, and press the power button to power up the Raspberry Pi. If the hardware build and software installation were done correctly, the display should show a black screen at power on, then within 1 minute display the RetroPie splash screen and the EmulationStation launcher. Hold the power button for about half a second and release it. The Raspberry Pi should safely shut down and the display should turn off completely. If the Raspberry Pi does not shut down, it is likely because one or more of the pads is not soldered properly.
 
 ## 4. connect via SSH and change password
 
@@ -45,7 +45,7 @@ You can also test audio at this point by running `speaker-test -c2` on the Raspb
 
 Follow the [RetroPie Getting Started guide](https://retropie.org.uk/docs/Controller-Configuration/) to configure and test the gamepad buttons and load ROMs.
 
-Pi Tin has a dedicated hotkey for RetroPie which is located directly above the power button. This button is configurable during the controller setup process. The special functions shown below can be used by pressing the buttons while holding down the hotkey.
+Pi Tin has a dedicated hotkey for RetroPie which is located directly above the power button. **This button should be selected as "Hotkey Enable" during the controller setup process.** The special functions shown below can be used by pressing the buttons while holding down the hotkey.
 
 ![](images/hotkeys.jpg)
 

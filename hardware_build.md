@@ -42,6 +42,7 @@
 
 - soldering iron with narrow conical tip
 - solder (63% tin / 37% lead solder, 0.6mm or smaller diameter recommended)
+- 2mm thick x 10mm wide EPDM foam tape or similar adhesive-backed foam (included in kits)
 - flux pen or paste flux (use rosin or no-clean flux only, not water soluble flux. we recommend [Chip Quik NC191](https://www.digikey.com/en/products/detail/chip-quik-inc/NC191/11480391))
 - two binder clips or small spring clamps (such as [Harbor Freight #69375](https://www.harborfreight.com/micro-spring-clamp-set-6-piece-69375.html))
 - multimeter with continuity test setting
@@ -57,7 +58,6 @@
 - wood block that fits inside open Altoids tin, to support it during drilling
 - isopropyl alcohol, 91%
 - thin double-sided tape (such as 3M 468MP or Tesa 61395)
-- 2mm thick x 10mm wide EPDM foam tape or similar adhesive-backed foam
 - cyanoacrylate adhesive (super glue)
 
 ## 3D printing instructions
@@ -158,7 +158,7 @@ If using DS Lite buttons, insert the 3D printed TPU plugs into the A, B, X, Y, s
 
 ## 5. functional test
 
-We strongly recommend testing the functionality of the Raspberry Pi, Pi Tin PCBs, and display at this point. First, connect the display cable to the Main PCB following the same procedure used to connect it to the Display PCB. Connect the battery to the connector at the corner of the Main PCB and ensure there is no SD card in the Raspberry Pi.
+To prepare for software setup, connect the display cable to the Main PCB following the same procedure used to connect it to the Display PCB. Connect the battery to the connector at the corner of the Main PCB and ensure there is no SD card in the Raspberry Pi.
 
 ![](images/test_connections.jpg)
 
@@ -166,13 +166,7 @@ Connect the Main PCB to a power source using a USB-C cable. The green LED should
 
 *Note: The green LED indicates that the battery is charging. It turns off when the battery is fully charged. The orange LED indicates that the battery voltage is low. The Raspberry Pi will automatically shut down when the battery is critically low.*
 
-Disconnect both the USB-C cable and the battery. Reconnect the USB-C cable and press the power button (the bottom-rightmost button, circled below). The display should turn on immediately and display a blank white screen. If it does not, the display is not receiving power. Double-check the display and cable connectors and all solder joints on the Raspberry Pi.
-
-![](images/power_button.jpg)
-
-*Note: The power button cannot be used to shut down the Raspberry Pi until it is properly configured in software. If the Pi is powered on without the SD card installed or without the software configured, both the battery and USB-C cable will need to be disconnected to power it off.*
-
-Disconnect the USB-C cable to turn off the Pi.
+Disconnect both the USB-C cable and the battery.
 
 ## next steps
 

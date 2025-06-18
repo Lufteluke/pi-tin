@@ -10,7 +10,11 @@ Fit the Main PCB assembly into the lower case by inserting the PCB at an angle, 
 
 ## 2. lower case assembly
 
-Remove the PCB and screws and insert the battery into the lower case with the wires facing to the right. Coil the wires as shown and connect the battery to the Main PCB. Disconnect the display cable from the Display PCB (lift the black retention flap on the connector, then remove the cable) and connect it to the Main PCB.
+Remove the PCB and screws from the lower case and apply one 6x10mm piece of EPDM foam tape in the location highlighted in blue below to cushion the battery.
+
+![](images/3dp_case_foam_tape.png)
+
+Insert the battery into the lower case with the wires facing to the right. Coil the wires as shown and connect the battery to the Main PCB. Disconnect the display cable from the Display PCB (lift the black retention flap on the connector, then remove the cable) and connect it to the Main PCB.
 
 ![](images/lower_case_battery_1.jpg)
 

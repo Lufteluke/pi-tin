@@ -16,15 +16,13 @@ Insert the four rear buttons into the rear housing, then pick up the front panel
 
 *Note: Some downward pressure is required when tightening the screws for the first time since they are threading directly into plastic.*
 
-Use a small piece of thin double-sided tape to secure the battery in place if desired.
-
 ![](images/mint_tin_asm.jpg)
 
 Check that the buttons on the front panel are not sticking. If they are, it is likely due to misalignment of the 3D printed membrane or defects on the 3D printed parts that need to be trimmed off.
 
-Attach a piece of EPDM foam tape to the side of the main PCB assembly as shown to help keep it centered inside the tin.
+Apply two 6x10mm pieces and one 20x10mm piece of EPDM foam tape in the locations highlighted in blue below to cushion the battery and keep the assembly centered inside the mint tin.
 
-![](images/mint_tin_foam_tape.jpg)
+![](images/mint_tin_foam_tape.png)
 
 ## 2. prepare the Altoids tin
 
