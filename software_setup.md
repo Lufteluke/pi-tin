@@ -57,3 +57,10 @@ The volume control hotkeys must be set up after configuring the controller by ma
 input_volume_up_axis = "-1"
 input_volume_down_axis = "+1"
 ```
+
+## next steps
+
+Once you have installed and configured RetroPie and verified that the hardware is working, continue to the final assembly guide for your build option.
+
+- [final assembly - 3D printed case version](./3dp_assembly)
+- [final assembly - Altoids tin version](./altoids_assembly)

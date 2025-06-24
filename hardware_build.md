@@ -57,7 +57,7 @@
 - small flush wire cutters
 - wood block that fits inside open Altoids tin, to support it during drilling
 - isopropyl alcohol, 91%
-- thin double-sided tape (such as 3M 468MP or Tesa 61395)
+- thin double-sided tape (such as 3M 467MP/468MP or Tesa 61395)
 - cyanoacrylate adhesive (super glue)
 
 ## 3D printing instructions
@@ -72,13 +72,15 @@ All parts have a flat face and should be printed with this side facing down. All
 
 STL files for all 3D printed parts can be downloaded [here (ZIP file)](3d/pi_tin_stl.zip). They are organized in folders based on build variant and button type (3D printed or DS Lite buttons). Some parts have "x2" or similar at the end of the filename, which means that multiple copies of that part are required. There are separate versions of the faceplate for opaque and translucent materials - the version for opaque materials has a hole exposing the battery indicator LEDs. The 3D printed A/B/X/Y buttons can either be printed individually or as one conjoined part; STL files for both options are included.
 
-The photos below show all the parts required for each build option, assuming 3D printed buttons. If using DS Lite buttons, the TPU button membranes (black) will look different.
+### if using DS Lite buttons
 
-### 3D printed parts for 3D printed case version
+If using DS Lite buttons instead of 3D printed buttons, the TPU button membranes (black) will look different than what is shown in the photos below - there is a different D-pad membrane and four separate cylindrical plugs that fit into the A/B/X/Y buttons. It is necessary to fill the hollow inside of the DS Lite start/select buttons and a STL file is provided for this, but it may be too small to print well on some printers. Filling these buttons with hot glue, epoxy, or silicone will work just as well.
+
+### all 3D printed parts for 3D printed case version
 
 ![](images/3dp_case_parts.jpg)
 
-### 3D printed parts for Altoids tin version
+### all 3D printed parts for Altoids tin version
 
 ![](images/mint_tin_parts.jpg)
 

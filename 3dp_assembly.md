@@ -36,7 +36,9 @@ Check that the buttons on the front panel are not sticking. If they are, it is l
 
 ## 3. display assembly
 
-Remove the protective film from the display. Fold the display FPC over the back of the display and place the display assembly into the display bezel, aligning the display cable connector with the cutout on the bezel. Connect the display cable to the Display PCB.
+*Note: Rev. 1 Display PCB shown, Rev. 2 is smaller but the relative position of the connectors is the same.*
+
+Remove the protective film from the display. Fold the display FPC (orange ribbon cable) over the back of the display and place the display assembly into the display bezel, aligning the display cable connector with the cutout on the bezel. Connect the display cable to the Display PCB.
 
 ![](images/display_bezel.jpg)
 

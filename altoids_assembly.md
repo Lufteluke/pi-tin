@@ -50,13 +50,19 @@ Insert the 4x2mm neodymium disc magnet into the lid clip as shown, applying a sm
 
 ## 4. display
 
-*Note: 3D printed parts in Altoids tin kits will have tape pre-applied. Rev. 1 Display PCB shown, Rev. 2 will differ slightly.*
+*Note: 3D printed parts in Altoids tin kits will have tape pre-applied. Rev. 1 Display PCB shown, Rev. 2 is smaller but the relative position of the connectors is the same.*
 
-Use thin double-sided tape to attach the Display PCB to the rear of the display in its natural resting position, as shown below. The Display PCB should not overhang the edges of the display module and the display interconnect cable should be roughly centered with the viewing area of the display.
+Connect the display to the display PCB if it is not already, following the instructions in the electronics build guide. Use thin double-sided tape or a few tiny drops of cyanoacrylate glue to attach the Display PCB to the rear of the display in its natural resting position, as shown below. The display FPC (orange ribbon cable) should lay flat and must **not** be under any tension. The Display PCB should not overhang the edges of the display module and the display interconnect cable should be roughly centered with the viewing area of the display.
+
+**Rev. 2 PCB**
+
+![](images/displaypcb_rev2_back.png)
+
+**Rev. 1 PCB** (shown from here on out)
 
 ![](images/display_tape_1.jpg)
 
-Apply thin double-sided tape to the top of the Display PCB and the exposed corners of the rear of the display module. Attach the display mount as shown, ensuring that the LCD module is aligned with the two flanges on either side of the display mount. Any vertical misalignment may result in the LCD getting damaged when the tin is closed.
+Apply thin double-sided tape to the top of the Display PCB and the exposed corners of the rear of the display module (or to the corresponding surfaces on the display mount). Attach the display mount as shown, ensuring that the LCD module is aligned with the two flanges on either side of the display mount. Any vertical misalignment may result in the LCD getting damaged when the tin is closed.
 
 ![](images/display_tape_2.jpg)
 
