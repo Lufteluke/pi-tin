@@ -84,6 +84,14 @@ The photos below show all the parts required for each build option, assuming 3D 
 
 <small>All the parts shown in the photos were printed with a 0.6mm nozzle, using Bambu Lab PETG and PolyMaker PolyFlex TPU95.</small>
 
+## note about practice boards
+
+The latest version of the main PCB design includes two practice boards which must be broken off of the main PCB along the perforated lines. One of the boards has pads that match the Main PCB, with a second set of electrically connected pads that can be used to test continuity of the finished solder joints, and the second board has plated through holes matching the Raspberry Pi. They can be placed together as shown below and used to practice the soldering technique explained in the next section before actually soldering the Raspberry Pi to the main PCB.
+
+![](images/pcb_front.png)
+
+![](images/practice_boards.jpg)
+
 ## 1. solder the Raspberry Pi to the main PCB
 
 **Important: Use a conical or chisel type soldering iron tip that is narrow enough to fit through one of the 40-pin header holes on the Raspberry Pi. If your tip is not narrow enough, it will be very difficult to solder the boards together correctly.**

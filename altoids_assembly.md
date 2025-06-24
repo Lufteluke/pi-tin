@@ -20,7 +20,7 @@ Insert the four rear buttons into the rear housing, then pick up the front panel
 
 Check that the buttons on the front panel are not sticking. If they are, it is likely due to misalignment of the 3D printed membrane or defects on the 3D printed parts that need to be trimmed off.
 
-Apply two 6x10mm pieces and one 20x10mm piece of EPDM foam tape in the locations highlighted in blue below to cushion the battery and keep the assembly centered inside the mint tin.
+Apply two 6x10mm pieces and one 18x10mm piece of EPDM foam tape in the locations highlighted in blue below to cushion the battery and keep the assembly centered inside the mint tin.
 
 ![](images/mint_tin_foam_tape.png)
 
