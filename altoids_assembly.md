@@ -62,7 +62,7 @@ Connect the display to the display PCB if it is not already, following the instr
 
 ![](images/display_tape_1.jpg)
 
-Apply thin double-sided tape to the top of the Display PCB and the exposed corners of the rear of the display module (or to the corresponding surfaces on the display mount). Attach the display mount as shown, ensuring that the LCD module is aligned with the two flanges on either side of the display mount. Any vertical misalignment may result in the LCD getting damaged when the tin is closed.
+Apply thin double-sided tape to the top of the Display PCB or to the corresponding surface on the display mount). Attach the display mount as shown, ensuring that the LCD module is aligned with the two flanges on either side of the display mount. Any vertical misalignment may result in the LCD getting damaged when the tin is closed.
 
 ![](images/display_tape_2.jpg)
 
